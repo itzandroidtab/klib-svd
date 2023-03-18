@@ -3,7 +3,7 @@
 <device schemaVersion="1.1" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="CMSIS-SVD.xsd" >
   <vendor>Maxim Integrated</vendor>                                       <!-- device vendor name -->
   <vendorID>Maxim</vendorID>                                        <!-- device vendor short name -->
-  <name>MAX32625</name>                                        <!-- name of part-->
+  <name>max32625</name>                                        <!-- name of part-->
   <series>ARMCM4</series>                                         <!-- device series the device belongs to -->
   <version>1.1</version>                                          <!-- version of this description, adding CMSIS-SVD 1.1 tags -->
   <description>The MAX32625/6 device family is designed for wearable and portable medical and fitness applications. The devices contain an ARM Cortex-M4 processor with FPU, execute up to 96MHz and include a 10-bit ADC and a versatile set of on-chip peripherals. </description>

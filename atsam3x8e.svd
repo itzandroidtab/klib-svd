@@ -31,7 +31,7 @@
 
 <device xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1" xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <vendor>Atmel</vendor>
-  <name>ATSAM3X8E</name>
+  <name>atsam3x8e</name>
   <series>SAM3X</series>
   <version>0</version>
   <description>Atmel ATSAM3X8E Microcontroller</description>
