@@ -37,7 +37,7 @@ SPDX-License-Identifier: BSD-3-Clause
         <register>
           <name>MOD</name>
           <description>Watchdog mode register. This register contains the basic mode and status of the Watchdog Timer.</description>
-          <addressOffset>0</addressOffset>
+          <addressOffset>0x0</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -231,11 +231,11 @@ SPDX-License-Identifier: BSD-3-Clause
           <dimIncrement>0x10</dimIncrement>
           <name>CHANNEL[%s]</name>
           <description>no description available</description>
-          <addressOffset>0</addressOffset>
+          <addressOffset>0x0</addressOffset>
           <register>
             <name>INTVAL</name>
             <description>MRT Time interval value register. This value is loaded into the TIMER register.</description>
-            <addressOffset>0</addressOffset>
+            <addressOffset>0x0</addressOffset>
             <size>32</size>
             <access>read-write</access>
             <resetValue>0</resetValue>
@@ -491,7 +491,7 @@ SPDX-License-Identifier: BSD-3-Clause
         <register>
           <name>CTRL</name>
           <description>Self wake-up timer control register.</description>
-          <addressOffset>0</addressOffset>
+          <addressOffset>0x0</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -610,7 +610,7 @@ SPDX-License-Identifier: BSD-3-Clause
           <name>PINASSIGN0</name>
           <description>Pin assign register 0. Assign movable functions U0_TXD, U0_RXD, U0_RTS, U0_CTS.</description>
           <alternateGroup>PINASSIGN_PINASSIGN_DATA</alternateGroup>
-          <addressOffset>0</addressOffset>
+          <addressOffset>0x0</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0xFFFFFFFF</resetValue>
@@ -650,7 +650,7 @@ SPDX-License-Identifier: BSD-3-Clause
           <name>PINASSIGN_DATA0</name>
           <description>Pin assign register</description>
           <alternateGroup>PINASSIGN_PINASSIGN_DATA</alternateGroup>
-          <addressOffset>0</addressOffset>
+          <addressOffset>0x0</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0xFFFFFFFF</resetValue>
@@ -1686,7 +1686,7 @@ SPDX-License-Identifier: BSD-3-Clause
         <register>
           <name>CTRL</name>
           <description>ADC Control register. Contains the clock divide value, resolution selection, sampling time selection, and mode controls.</description>
-          <addressOffset>0</addressOffset>
+          <addressOffset>0x0</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0x600</resetValue>
@@ -2586,7 +2586,7 @@ SPDX-License-Identifier: BSD-3-Clause
         <register>
           <name>PCON</name>
           <description>Power control register</description>
-          <addressOffset>0</addressOffset>
+          <addressOffset>0x0</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2740,7 +2740,7 @@ SPDX-License-Identifier: BSD-3-Clause
         <register>
           <name>CTRL</name>
           <description>Comparator control register</description>
-          <addressOffset>0</addressOffset>
+          <addressOffset>0x0</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -3015,7 +3015,7 @@ SPDX-License-Identifier: BSD-3-Clause
         <register>
           <name>IR</name>
           <description>Interrupt Register. The IR can be written to clear interrupts. The IR can be read to identify which of eight possible interrupt sources are pending.</description>
-          <addressOffset>0</addressOffset>
+          <addressOffset>0x0</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -3805,7 +3805,7 @@ SPDX-License-Identifier: BSD-3-Clause
         <register>
           <name>PIO0_17</name>
           <description>Digital I/O control for pins PIO0_17</description>
-          <addressOffset>0</addressOffset>
+          <addressOffset>0x0</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0xB0</resetValue>
@@ -5467,7 +5467,7 @@ SPDX-License-Identifier: BSD-3-Clause
         <register>
           <name>SYSMEMREMAP</name>
           <description>System Remap register</description>
-          <addressOffset>0</addressOffset>
+          <addressOffset>0x0</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -7663,7 +7663,7 @@ SPDX-License-Identifier: BSD-3-Clause
         <register>
           <name>CFG</name>
           <description>Configuration for shared functions.</description>
-          <addressOffset>0</addressOffset>
+          <addressOffset>0x0</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -8983,7 +8983,7 @@ SPDX-License-Identifier: BSD-3-Clause
         <register>
           <name>CFG</name>
           <description>SPI Configuration register</description>
-          <addressOffset>0</addressOffset>
+          <addressOffset>0x0</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -9885,7 +9885,7 @@ SPDX-License-Identifier: BSD-3-Clause
         <register>
           <name>CFG</name>
           <description>USART Configuration register. Basic USART configuration settings that typically are not changed during operation.</description>
-          <addressOffset>0</addressOffset>
+          <addressOffset>0x0</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -10874,7 +10874,7 @@ SPDX-License-Identifier: BSD-3-Clause
         <register>
           <name>MODE</name>
           <description>CRC mode register</description>
-          <addressOffset>0</addressOffset>
+          <addressOffset>0x0</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -10991,7 +10991,7 @@ SPDX-License-Identifier: BSD-3-Clause
           <dimIncrement>0x1</dimIncrement>
           <name>B[%s]</name>
           <description>Byte pin registers for all port 0 and 1 GPIO pins</description>
-          <addressOffset>0</addressOffset>
+          <addressOffset>0x0</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -11254,7 +11254,7 @@ SPDX-License-Identifier: BSD-3-Clause
         <register>
           <name>ISEL</name>
           <description>Pin Interrupt Mode register</description>
-          <addressOffset>0</addressOffset>
+          <addressOffset>0x0</addressOffset>
           <size>32</size>
           <access>read-write</access>
           <resetValue>0</resetValue>

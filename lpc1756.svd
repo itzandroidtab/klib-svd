@@ -25630,7 +25630,7 @@
 				<register>
 					<name>RXPLEN</name>
 					<description>USB Receive Packet Length</description>
-					<addressOffset>220</addressOffset>
+					<addressOffset>0x220</addressOffset>
 					<access>read-only</access>
 					<resetValue>0</resetValue>
 					<resetMask>0xFFFFFFFF</resetMask>
