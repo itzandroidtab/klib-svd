@@ -24828,201 +24828,195 @@
 						</field>
 					</fields>
 				</register>
-				<register>
+				<cluster>
 					<dim>8</dim>
 					<dimIncrement>0x20</dimIncrement>
-					<dimIndex>0-7</dimIndex>
-					<name>SRCADDR%s</name>
-					<description>DMA Channel 0 Source Address Register</description>
+					<name>CH[%s]</name>
+					<description>DMA Channel registers.</description>
+					<headerStructName>dma_ch</headerStructName>
 					<addressOffset>0x100</addressOffset>
 					<access>read-write</access>
-					<resetValue>0</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-					<fields>
-						<field>
-							<name>SRCADDR</name>
-							<description>DMA source address. Reading this register will return the current source address.</description>
-							<bitRange>[31:0]</bitRange>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<dim>8</dim>
-					<dimIncrement>0x20</dimIncrement>
-					<dimIndex>0-7</dimIndex>
-					<name>DESTADDR%s</name>
-					<description>DMA Channel 0 Destination Address Register</description>
-					<addressOffset>0x104</addressOffset>
-					<access>read-write</access>
-					<resetValue>0</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-					<fields>
-						<field>
-							<name>DESTADDR</name>
-							<description>DMA Destination address. Reading this register will return the current destination address.</description>
-							<bitRange>[31:0]</bitRange>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<dim>8</dim>
-					<dimIncrement>0x20</dimIncrement>
-					<dimIndex>0-7</dimIndex>
-					<name>LLI%s</name>
-					<description>DMA Channel 0 Linked List Item Register</description>
-					<addressOffset>0x108</addressOffset>
-					<access>read-write</access>
-					<resetValue>0</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-					<fields>
-						<field>
-							<name>RESERVED</name>
-							<description>Reserved, and must be written as 0.</description>
-							<bitRange>[1:0]</bitRange>
-						</field>
-						<field>
-							<name>LLI</name>
-							<description>Linked list item. Bits [31:2] of the address for the next LLI. Address bits [1:0] are 0.</description>
-							<bitRange>[31:2]</bitRange>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<dim>8</dim>
-					<dimIncrement>0x20</dimIncrement>
-					<dimIndex>0-7</dimIndex>
-					<name>CONTROL%s</name>
-					<description>DMA Channel 0 Control Register</description>
-					<addressOffset>0x10C</addressOffset>
-					<access>read-write</access>
-					<resetValue>0</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-					<fields>
-						<field>
-							<name>TRANSFERSIZE</name>
-							<description>Transfer size. This field sets the size of the transfer when the DMA controller is the flow controller, in which case the value must be set before the channel is enabled. Transfer size is updated as data transfers are completed. A read from this field indicates the number of transfers completed on the destination bus. Reading the register when the channel is active does not give useful information because by the time that the software has processed the value read, the channel might have progressed. It is intended to be used only when a channel is enabled and then disabled. The transfer size value is not used if a peripheral is the flow controller.</description>
-							<bitRange>[11:0]</bitRange>
-						</field>
-						<field>
-							<name>SBSIZE</name>
-							<description>Source burst size. Indicates the number of transfers that make up a source burst. This value must be set to the burst size of the source peripheral, or if the source is memory, to the memory boundary size. The burst size is the amount of data that is transferred when the DMACBREQ signal goes active in the source peripheral. 000 - 1 001 - 4 010 - 8 011 - 16 100 - 32 101 - 64 110 - 128 111 - 256</description>
-							<bitRange>[14:12]</bitRange>
-						</field>
-						<field>
-							<name>DBSIZE</name>
-							<description>Destination burst size. Indicates the number of transfers that make up a destination burst transfer request. This value must be set to the burst size of the destination peripheral or, if the destination is memory, to the memory boundary size. The burst size is the amount of data that is transferred when the DMACBREQ signal goes active in the destination peripheral. 000 - 1 001 - 4 010 - 8 011 - 16 100 - 32 101 - 64 110 - 128 111 - 256</description>
-							<bitRange>[17:15]</bitRange>
-						</field>
-						<field>
-							<name>SWIDTH</name>
-							<description>Source transfer width. The source and destination widths can be different from each other. The hardware automatically packs and unpacks the data as required. 000 - Byte (8-bit) 001 - Halfword (16-bit) 010 - Word (32-bit) 011 to 111 - Reserved</description>
-							<bitRange>[20:18]</bitRange>
-						</field>
-						<field>
-							<name>DWIDTH</name>
-							<description>Destination transfer width. The source and destination widths can be different from each other. The hardware automatically packs and unpacks the data as required. 000 - Byte (8-bit) 001 - Halfword (16-bit) 010 - Word (32-bit) 011 to 111 - Reserved</description>
-							<bitRange>[23:21]</bitRange>
-						</field>
-						<field>
-							<name>RESERVED</name>
-							<description>Reserved, and must be written as 0.</description>
-							<bitRange>[25:24]</bitRange>
-						</field>
-						<field>
-							<name>SI</name>
-							<description>Source increment: 0 - the source address is not incremented after each transfer. 1 - the source address is incremented after each transfer.</description>
-							<bitRange>[26:26]</bitRange>
-						</field>
-						<field>
-							<name>DI</name>
-							<description>Destination increment: 0 - the destination address is not incremented after each transfer. 1 - the destination address is incremented after each transfer.</description>
-							<bitRange>[27:27]</bitRange>
-						</field>
-						<field>
-							<name>PROT1</name>
-							<description>This is provided to the peripheral during a DMA bus access and indicates that the access is in user mode or privileged mode. This information is not used in the LPC178x/177x. 0 - access is in user mode. 1 - access is in privileged mode.</description>
-							<bitRange>[28:28]</bitRange>
-						</field>
-						<field>
-							<name>PROT2</name>
-							<description>This is provided to the peripheral during a DMA bus access and indicates to the peripheral that the access is bufferable or not bufferable. This information is not used in the LPC178x/177x. 0 - access is not bufferable. 1 - access is bufferable.</description>
-							<bitRange>[29:29]</bitRange>
-						</field>
-						<field>
-							<name>PROT3</name>
-							<description>This is provided to the peripheral during a DMA bus access and indicates to the peripheral that the access is cacheable or not cacheable. This information is not used in the LPC178x/177x. 0 - access is not cacheable. 1 - access is cacheable.</description>
-							<bitRange>[30:30]</bitRange>
-						</field>
-						<field>
-							<name>I</name>
-							<description>Terminal count interrupt enable bit. 0 - the terminal count interrupt is disabled. 1 - the terminal count interrupt is enabled.</description>
-							<bitRange>[31:31]</bitRange>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<dim>8</dim>
-					<dimIncrement>0x20</dimIncrement>
-					<dimIndex>0-7</dimIndex>
-					<name>CONFIG%s</name>
-					<description>DMA Channel 0 Configuration Register[1]</description>
-					<addressOffset>0x110</addressOffset>
-					<access>read-write</access>
-					<resetValue>0</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-					<fields>
-						<field>
-							<name>E</name>
-							<description>Channel enable. Reading this bit indicates whether a channel is currently enabled or disabled: 0 = channel disabled. 1 = channel enabled. The Channel Enable bit status can also be found by reading the DMACEnbldChns Register. A channel is enabled by setting this bit. A channel can be disabled by clearing the Enable bit. This causes the current AHB transfer (if one is in progress) to complete and the channel is then disabled. Any data in the FIFO of the relevant channel is lost. Restarting the channel by setting the Channel Enable bit has unpredictable effects, the channel must be fully re-initialized. The channel is also disabled, and Channel Enable bit cleared, when the last LLI is reached, the DMA transfer is completed, or if a channel error is encountered. If a channel must be disabled without losing data in the FIFO, the Halt bit must be set so that further DMA requests are ignored. The Active bit must then be polled until it reaches 0, indicating that there is no data left in the FIFO. Finally, the Channel Enable bit can be cleared.</description>
-							<bitRange>[0:0]</bitRange>
-						</field>
-						<field>
-							<name>SRCPERIPHERAL</name>
-							<description>Source peripheral. This value selects the DMA source request peripheral. This field is ignored if the source of the transfer is from memory. See Table 672 for peripheral identification.</description>
-							<bitRange>[5:1]</bitRange>
-						</field>
-						<field>
-							<name>DESTPERIPHERAL</name>
-							<description>Destination peripheral. This value selects the DMA destination request peripheral. This field is ignored if the destination of the transfer is to memory. See Table 672 for peripheral identification.</description>
-							<bitRange>[10:6]</bitRange>
-						</field>
-						<field>
-							<name>TRANSFERTYPE</name>
-							<description>This value indicates the type of transfer and specifies the flow controller. The transfer type can be memory-to-memory, memory-to-peripheral, peripheral-to-memory, or peripheral-to-peripheral. Flow can be controlled by the DMA controller, the source peripheral, or the destination peripheral. Refer to Table 694 for the encoding of this field.</description>
-							<bitRange>[13:11]</bitRange>
-						</field>
-						<field>
-							<name>IE</name>
-							<description>Interrupt error mask. When cleared, this bit masks out the error interrupt of the relevant channel.</description>
-							<bitRange>[14:14]</bitRange>
-						</field>
-						<field>
-							<name>ITC</name>
-							<description>Terminal count interrupt mask. When cleared, this bit masks out the terminal count interrupt of the relevant channel.</description>
-							<bitRange>[15:15]</bitRange>
-						</field>
-						<field>
-							<name>L</name>
-							<description>Lock. When set, this bit enables locked transfers. This information is not used in the LPC178x/177x.</description>
-							<bitRange>[16:16]</bitRange>
-						</field>
-						<field>
-							<name>A</name>
-							<description>Active: 0 = there is no data in the FIFO of the channel. 1 = the channel FIFO has data. This value can be used with the Halt and Channel Enable bits to cleanly disable a DMA channel. This is a read-only bit.</description>
-							<bitRange>[17:17]</bitRange>
-						</field>
-						<field>
-							<name>H</name>
-							<description>Halt: 0 = enable DMA requests. 1 = ignore further source DMA requests. The contents of the channel FIFO are drained. This value can be used with the Active and Channel Enable bits to cleanly disable a DMA channel.</description>
-							<bitRange>[18:18]</bitRange>
-						</field>
-						<field>
-							<name>RESERVED</name>
-							<description>Reserved. Read value is undefined, only zero should be written.</description>
-							<bitRange>[31:19]</bitRange>
-						</field>
-					</fields>
-				</register>
+					<register>
+						<name>SRCADDR</name>
+						<description>DMA Channel Source Address Register</description>
+						<addressOffset>0x0</addressOffset>
+						<access>read-write</access>
+						<resetValue>0</resetValue>
+						<resetMask>0xFFFFFFFF</resetMask>
+						<fields>
+							<field>
+								<name>SRCADDR</name>
+								<description>DMA source address. Reading this register will return the current source address.</description>
+								<bitRange>[31:0]</bitRange>
+							</field>
+						</fields>
+					</register>
+					<register>
+						<name>DESTADDR</name>
+						<description>DMA Channel Destination Address Register</description>
+						<addressOffset>0x4</addressOffset>
+						<access>read-write</access>
+						<resetValue>0</resetValue>
+						<resetMask>0xFFFFFFFF</resetMask>
+						<fields>
+							<field>
+								<name>DESTADDR</name>
+								<description>DMA Destination address. Reading this register will return the current destination address.</description>
+								<bitRange>[31:0]</bitRange>
+							</field>
+						</fields>
+					</register>
+					<register>
+						<name>LLI</name>
+						<description>DMA Channel Linked List Item Register</description>
+						<addressOffset>0x8</addressOffset>
+						<access>read-write</access>
+						<resetValue>0</resetValue>
+						<resetMask>0xFFFFFFFF</resetMask>
+						<fields>
+							<field>
+								<name>RESERVED</name>
+								<description>Reserved, and must be written as 0.</description>
+								<bitRange>[1:0]</bitRange>
+							</field>
+							<field>
+								<name>LLI</name>
+								<description>Linked list item. Bits [31:2] of the address for the next LLI. Address bits [1:0] are 0.</description>
+								<bitRange>[31:2]</bitRange>
+							</field>
+						</fields>
+					</register>
+					<register>
+						<name>CONTROL</name>
+						<description>DMA Channel Control Register</description>
+						<addressOffset>0xC</addressOffset>
+						<access>read-write</access>
+						<resetValue>0</resetValue>
+						<resetMask>0xFFFFFFFF</resetMask>
+						<fields>
+							<field>
+								<name>TRANSFERSIZE</name>
+								<description>Transfer size. This field sets the size of the transfer when the DMA controller is the flow controller, in which case the value must be set before the channel is enabled. Transfer size is updated as data transfers are completed. A read from this field indicates the number of transfers completed on the destination bus. Reading the register when the channel is active does not give useful information because by the time that the software has processed the value read, the channel might have progressed. It is intended to be used only when a channel is enabled and then disabled. The transfer size value is not used if a peripheral is the flow controller.</description>
+								<bitRange>[11:0]</bitRange>
+							</field>
+							<field>
+								<name>SBSIZE</name>
+								<description>Source burst size. Indicates the number of transfers that make up a source burst. This value must be set to the burst size of the source peripheral, or if the source is memory, to the memory boundary size. The burst size is the amount of data that is transferred when the DMACBREQ signal goes active in the source peripheral. 000 - 1 001 - 4 010 - 8 011 - 16 100 - 32 101 - 64 110 - 128 111 - 256</description>
+								<bitRange>[14:12]</bitRange>
+							</field>
+							<field>
+								<name>DBSIZE</name>
+								<description>Destination burst size. Indicates the number of transfers that make up a destination burst transfer request. This value must be set to the burst size of the destination peripheral or, if the destination is memory, to the memory boundary size. The burst size is the amount of data that is transferred when the DMACBREQ signal goes active in the destination peripheral. 000 - 1 001 - 4 010 - 8 011 - 16 100 - 32 101 - 64 110 - 128 111 - 256</description>
+								<bitRange>[17:15]</bitRange>
+							</field>
+							<field>
+								<name>SWIDTH</name>
+								<description>Source transfer width. The source and destination widths can be different from each other. The hardware automatically packs and unpacks the data as required. 000 - Byte (8-bit) 001 - Halfword (16-bit) 010 - Word (32-bit) 011 to 111 - Reserved</description>
+								<bitRange>[20:18]</bitRange>
+							</field>
+							<field>
+								<name>DWIDTH</name>
+								<description>Destination transfer width. The source and destination widths can be different from each other. The hardware automatically packs and unpacks the data as required. 000 - Byte (8-bit) 001 - Halfword (16-bit) 010 - Word (32-bit) 011 to 111 - Reserved</description>
+								<bitRange>[23:21]</bitRange>
+							</field>
+							<field>
+								<name>RESERVED</name>
+								<description>Reserved, and must be written as 0.</description>
+								<bitRange>[25:24]</bitRange>
+							</field>
+							<field>
+								<name>SI</name>
+								<description>Source increment: 0 - the source address is not incremented after each transfer. 1 - the source address is incremented after each transfer.</description>
+								<bitRange>[26:26]</bitRange>
+							</field>
+							<field>
+								<name>DI</name>
+								<description>Destination increment: 0 - the destination address is not incremented after each transfer. 1 - the destination address is incremented after each transfer.</description>
+								<bitRange>[27:27]</bitRange>
+							</field>
+							<field>
+								<name>PROT1</name>
+								<description>This is provided to the peripheral during a DMA bus access and indicates that the access is in user mode or privileged mode. This information is not used in the LPC178x/177x. 0 - access is in user mode. 1 - access is in privileged mode.</description>
+								<bitRange>[28:28]</bitRange>
+							</field>
+							<field>
+								<name>PROT2</name>
+								<description>This is provided to the peripheral during a DMA bus access and indicates to the peripheral that the access is bufferable or not bufferable. This information is not used in the LPC178x/177x. 0 - access is not bufferable. 1 - access is bufferable.</description>
+								<bitRange>[29:29]</bitRange>
+							</field>
+							<field>
+								<name>PROT3</name>
+								<description>This is provided to the peripheral during a DMA bus access and indicates to the peripheral that the access is cacheable or not cacheable. This information is not used in the LPC178x/177x. 0 - access is not cacheable. 1 - access is cacheable.</description>
+								<bitRange>[30:30]</bitRange>
+							</field>
+							<field>
+								<name>I</name>
+								<description>Terminal count interrupt enable bit. 0 - the terminal count interrupt is disabled. 1 - the terminal count interrupt is enabled.</description>
+								<bitRange>[31:31]</bitRange>
+							</field>
+						</fields>
+					</register>
+					<register>
+						<name>CONFIG</name>
+						<description>DMA Channel 0 Configuration Register[1]</description>
+						<addressOffset>0x10</addressOffset>
+						<access>read-write</access>
+						<resetValue>0</resetValue>
+						<resetMask>0xFFFFFFFF</resetMask>
+						<fields>
+							<field>
+								<name>E</name>
+								<description>Channel enable. Reading this bit indicates whether a channel is currently enabled or disabled: 0 = channel disabled. 1 = channel enabled. The Channel Enable bit status can also be found by reading the DMACEnbldChns Register. A channel is enabled by setting this bit. A channel can be disabled by clearing the Enable bit. This causes the current AHB transfer (if one is in progress) to complete and the channel is then disabled. Any data in the FIFO of the relevant channel is lost. Restarting the channel by setting the Channel Enable bit has unpredictable effects, the channel must be fully re-initialized. The channel is also disabled, and Channel Enable bit cleared, when the last LLI is reached, the DMA transfer is completed, or if a channel error is encountered. If a channel must be disabled without losing data in the FIFO, the Halt bit must be set so that further DMA requests are ignored. The Active bit must then be polled until it reaches 0, indicating that there is no data left in the FIFO. Finally, the Channel Enable bit can be cleared.</description>
+								<bitRange>[0:0]</bitRange>
+							</field>
+							<field>
+								<name>SRCPERIPHERAL</name>
+								<description>Source peripheral. This value selects the DMA source request peripheral. This field is ignored if the source of the transfer is from memory. See Table 672 for peripheral identification.</description>
+								<bitRange>[5:1]</bitRange>
+							</field>
+							<field>
+								<name>DESTPERIPHERAL</name>
+								<description>Destination peripheral. This value selects the DMA destination request peripheral. This field is ignored if the destination of the transfer is to memory. See Table 672 for peripheral identification.</description>
+								<bitRange>[10:6]</bitRange>
+							</field>
+							<field>
+								<name>TRANSFERTYPE</name>
+								<description>This value indicates the type of transfer and specifies the flow controller. The transfer type can be memory-to-memory, memory-to-peripheral, peripheral-to-memory, or peripheral-to-peripheral. Flow can be controlled by the DMA controller, the source peripheral, or the destination peripheral. Refer to Table 694 for the encoding of this field.</description>
+								<bitRange>[13:11]</bitRange>
+							</field>
+							<field>
+								<name>IE</name>
+								<description>Interrupt error mask. When cleared, this bit masks out the error interrupt of the relevant channel.</description>
+								<bitRange>[14:14]</bitRange>
+							</field>
+							<field>
+								<name>ITC</name>
+								<description>Terminal count interrupt mask. When cleared, this bit masks out the terminal count interrupt of the relevant channel.</description>
+								<bitRange>[15:15]</bitRange>
+							</field>
+							<field>
+								<name>L</name>
+								<description>Lock. When set, this bit enables locked transfers. This information is not used in the LPC178x/177x.</description>
+								<bitRange>[16:16]</bitRange>
+							</field>
+							<field>
+								<name>A</name>
+								<description>Active: 0 = there is no data in the FIFO of the channel. 1 = the channel FIFO has data. This value can be used with the Halt and Channel Enable bits to cleanly disable a DMA channel. This is a read-only bit.</description>
+								<bitRange>[17:17]</bitRange>
+							</field>
+							<field>
+								<name>H</name>
+								<description>Halt: 0 = enable DMA requests. 1 = ignore further source DMA requests. The contents of the channel FIFO are drained. This value can be used with the Active and Channel Enable bits to cleanly disable a DMA channel.</description>
+								<bitRange>[18:18]</bitRange>
+							</field>
+							<field>
+								<name>RESERVED</name>
+								<description>Reserved. Read value is undefined, only zero should be written.</description>
+								<bitRange>[31:19]</bitRange>
+							</field>
+						</fields>
+					</register>
+				</cluster>
 			</registers>
 		</peripheral>
 		<peripheral>
