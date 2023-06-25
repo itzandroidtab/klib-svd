@@ -104,7 +104,7 @@
   </peripheral>
 <!--BBSIR Battery-Backed Registers.-->
   <peripheral>
-   <name>DMA</name>
+   <name>GPDMA</name>
    <description>DMA Controller Fully programmable, chaining capable DMA channels.</description>
    <baseAddress>0x40028000</baseAddress>
    <size>32</size>
