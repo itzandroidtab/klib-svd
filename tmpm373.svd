@@ -4,6 +4,15 @@
 	<name>tmpm373</name>
 	<version>0.1</version>
 	<description>TOSHIBA Cortex-M3 MCU</description>
+    <cpu>
+        <name>CM3</name>
+        <revision>r2p0</revision>
+        <endian>little</endian>
+        <mpuPresent>false</mpuPresent>
+        <fpuPresent>false</fpuPresent>
+        <nvicPrioBits>4</nvicPrioBits>
+        <vendorSystickConfig>false</vendorSystickConfig>
+    </cpu>
 	<addressUnitBits>8</addressUnitBits>
 	<width>32</width>
 	<peripherals>
