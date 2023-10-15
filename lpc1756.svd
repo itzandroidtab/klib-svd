@@ -3886,7 +3886,8 @@
 					<dim>4</dim>
 					<dimIncrement>0x4</dimIncrement>
 					<dimIndex>0-3</dimIndex>
-					<name>MR%s</name>
+					<name>MR[%s]</name>
+                    <displayName>MR[%s]</displayName>
 					<description>Match Register. Match registers are continuously compared to the PWM counter in order to control PWM output edges.</description>
 					<addressOffset>0x018</addressOffset>
 					<access>read-write</access>
