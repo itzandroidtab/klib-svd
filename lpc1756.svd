@@ -6768,1506 +6768,1125 @@
                         </field>
                     </fields>
                 </register>
-                <register>
-                    <name>STATR0</name>
-                    <description>GPIO Interrupt Status for Rising edge for Port 0.</description>
-                    <addressOffset>0x004</addressOffset>
-                    <access>read-only</access>
-                    <resetValue>0</resetValue>
-                    <resetMask>0xFFFFFFFF</resetMask>
-                    <fields>
-                        <field>
-                            <name>P0_0REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[0]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[0:0]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_1REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[1]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[1:1]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_2REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[2]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[2:2]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_3REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[3]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[3:3]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_4REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[4]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[4:4]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_5REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[5]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[5:5]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_6REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[6]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[6:6]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_7REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[7]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[7:7]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_8REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[8]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[8:8]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_9REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[9]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[9:9]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_10REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[10]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[10:10]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_11REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[11]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[11:11]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_12REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[12]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[12:12]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_13REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[13]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[13:13]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_14REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[14]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[14:14]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_15REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[15]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[15:15]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_16REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[16]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[16:16]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_17REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[17]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[17:17]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_18REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[18]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[18:18]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_19REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[19]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[19:19]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_20REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[20]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[20:20]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_21REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[21]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[21:21]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_22REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[22]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[22:22]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_23REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[23]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[23:23]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_24REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[24]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[24:24]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_25REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[25]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[25:25]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_26REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[26]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[26:26]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_27REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[27]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[27:27]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_28REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[28]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[28:28]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_29REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[29]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[29:29]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_30REI</name>
-                            <description>Status of Rising Edge Interrupt for P0[30]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[30:30]</bitRange>
-                        </field>
-                        <field>
-                            <name>RESERVED</name>
-                            <description>Reserved.</description>
-                            <bitRange>[31:31]</bitRange>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>STATF0</name>
-                    <description>GPIO Interrupt Status for Falling edge for Port 0.</description>
-                    <addressOffset>0x008</addressOffset>
-                    <access>read-only</access>
-                    <resetValue>0</resetValue>
-                    <resetMask>0xFFFFFFFF</resetMask>
-                    <fields>
-                        <field>
-                            <name>P0_0FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[0]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[0:0]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_1FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[1]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[1:1]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_2FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[2]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[2:2]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_3FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[3]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[3:3]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_4FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[4]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[4:4]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_5FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[5]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[5:5]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_6FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[6]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[6:6]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_7FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[7]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[7:7]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_8FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[8]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[8:8]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_9FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[9]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[9:9]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_10FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[10]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[10:10]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_11FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[11]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[11:11]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_12FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[12]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[12:12]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_13FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[13]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[13:13]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_14FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[14]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[14:14]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_15FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[15]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[15:15]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_16FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[16]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[16:16]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_17FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[17]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[17:17]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_18FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[18]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[18:18]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_19FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[19]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[19:19]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_20FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[20]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[20:20]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_21FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[21]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[21:21]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_22FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[22]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[22:22]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_23FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[23]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[23:23]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_24FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[24]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[24:24]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_25FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[25]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[25:25]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_26FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[26]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[26:26]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_27FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[27]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[27:27]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_28FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[28]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[28:28]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_29FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[29]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[29:29]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_30FEI</name>
-                            <description>Status of Falling Edge Interrupt for P0[30]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[30:30]</bitRange>
-                        </field>
-                        <field>
-                            <name>RESERVED</name>
-                            <description>Reserved.</description>
-                            <bitRange>[31:31]</bitRange>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CLR0</name>
-                    <description>GPIO Interrupt Clear.</description>
-                    <addressOffset>0x00C</addressOffset>
-                    <access>write-only</access>
-                    <resetValue>0</resetValue>
-                    <resetMask>0xFFFFFFFF</resetMask>
-                    <fields>
-                        <field>
-                            <name>P0_0CI</name>
-                            <description>Clear GPIO port Interrupts for P0[0]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[0:0]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_1CI</name>
-                            <description>Clear GPIO port Interrupts for P0[1]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[1:1]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_2CI</name>
-                            <description>Clear GPIO port Interrupts for P0[2]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[2:2]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_3CI</name>
-                            <description>Clear GPIO port Interrupts for P0[3]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[3:3]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_4CI</name>
-                            <description>Clear GPIO port Interrupts for P0[4]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[4:4]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_5CI</name>
-                            <description>Clear GPIO port Interrupts for P0[5]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[5:5]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_6CI</name>
-                            <description>Clear GPIO port Interrupts for P0[6]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[6:6]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_7CI</name>
-                            <description>Clear GPIO port Interrupts for P0[7]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[7:7]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_8CI</name>
-                            <description>Clear GPIO port Interrupts for P0[8]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[8:8]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_9CI</name>
-                            <description>Clear GPIO port Interrupts for P0[9]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[9:9]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_10CI</name>
-                            <description>Clear GPIO port Interrupts for P0[10]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[10:10]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_11CI</name>
-                            <description>Clear GPIO port Interrupts for P0[11]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[11:11]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_12CI</name>
-                            <description>Clear GPIO port Interrupts for P0[12]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[12:12]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_13CI</name>
-                            <description>Clear GPIO port Interrupts for P0[13]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[13:13]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_14CI</name>
-                            <description>Clear GPIO port Interrupts for P0[14]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[14:14]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_15CI</name>
-                            <description>Clear GPIO port Interrupts for P0[15]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[15:15]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_16CI</name>
-                            <description>Clear GPIO port Interrupts for P0[16]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[16:16]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_17CI</name>
-                            <description>Clear GPIO port Interrupts for P0[17]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[17:17]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_18CI</name>
-                            <description>Clear GPIO port Interrupts for P0[18]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[18:18]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_19CI</name>
-                            <description>Clear GPIO port Interrupts for P0[19]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[19:19]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_20CI</name>
-                            <description>Clear GPIO port Interrupts for P0[20]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[20:20]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_21CI</name>
-                            <description>Clear GPIO port Interrupts for P0[21]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[21:21]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_22CI</name>
-                            <description>Clear GPIO port Interrupts for P0[22]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[22:22]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_23CI</name>
-                            <description>Clear GPIO port Interrupts for P0[23]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[23:23]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_24CI</name>
-                            <description>Clear GPIO port Interrupts for P0[24]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[24:24]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_25CI</name>
-                            <description>Clear GPIO port Interrupts for P0[25]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[25:25]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_26CI</name>
-                            <description>Clear GPIO port Interrupts for P0[26]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[26:26]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_27CI</name>
-                            <description>Clear GPIO port Interrupts for P0[27]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[27:27]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_28CI</name>
-                            <description>Clear GPIO port Interrupts for P0[28]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[28:28]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_29CI</name>
-                            <description>Clear GPIO port Interrupts for P0[29]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[29:29]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_30CI</name>
-                            <description>Clear GPIO port Interrupts for P0[30]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[30:30]</bitRange>
-                        </field>
-                        <field>
-                            <name>RESERVED</name>
-                            <description>Reserved.</description>
-                            <bitRange>[31:31]</bitRange>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>ENR0</name>
-                    <description>GPIO Interrupt Enable for Rising edge for Port 0.</description>
-                    <addressOffset>0x010</addressOffset>
+                <cluster>
+                    <dim>2</dim>
+                    <dimIncrement>0x20</dimIncrement>
+                    <dimIndex>0-2</dimIndex>
+                    <name>PORT[%s]</name>
+                    <description>GPIO interrupt registers</description>
+                    <headerStructName>int_port</headerStructName>
+                    <addressOffset>0x4</addressOffset>
                     <access>read-write</access>
-                    <resetValue>0</resetValue>
-                    <resetMask>0xFFFFFFFF</resetMask>
-                    <fields>
-                        <field>
-                            <name>P0_0ER</name>
-                            <description>Enable rising edge interrupt for P0[0]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[0:0]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_1ER</name>
-                            <description>Enable rising edge interrupt for P0[1]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[1:1]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_2ER</name>
-                            <description>Enable rising edge interrupt for P0[2]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[2:2]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_3ER</name>
-                            <description>Enable rising edge interrupt for P0[3]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[3:3]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_4ER</name>
-                            <description>Enable rising edge interrupt for P0[4]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[4:4]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_5ER</name>
-                            <description>Enable rising edge interrupt for P0[5]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[5:5]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_6ER</name>
-                            <description>Enable rising edge interrupt for P0[6]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[6:6]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_7ER</name>
-                            <description>Enable rising edge interrupt for P0[7]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[7:7]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_8ER</name>
-                            <description>Enable rising edge interrupt for P0[8]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[8:8]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_9ER</name>
-                            <description>Enable rising edge interrupt for P0[9]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[9:9]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_10ER</name>
-                            <description>Enable rising edge interrupt for P0[10]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[10:10]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_11ER</name>
-                            <description>Enable rising edge interrupt for P0[11]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[11:11]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_12ER</name>
-                            <description>Enable rising edge interrupt for P0[12]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[12:12]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_13ER</name>
-                            <description>Enable rising edge interrupt for P0[13]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[13:13]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_14ER</name>
-                            <description>Enable rising edge interrupt for P0[14]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[14:14]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_15ER</name>
-                            <description>Enable rising edge interrupt for P0[15]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[15:15]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_16ER</name>
-                            <description>Enable rising edge interrupt for P0[16]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[16:16]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_17ER</name>
-                            <description>Enable rising edge interrupt for P0[17]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[17:17]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_18ER</name>
-                            <description>Enable rising edge interrupt for P0[18]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[18:18]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_19ER</name>
-                            <description>Enable rising edge interrupt for P0[19]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[19:19]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_20ER</name>
-                            <description>Enable rising edge interrupt for P0[20]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[20:20]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_21ER</name>
-                            <description>Enable rising edge interrupt for P0[21]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[21:21]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_22ER</name>
-                            <description>Enable rising edge interrupt for P0[22]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[22:22]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_23ER</name>
-                            <description>Enable rising edge interrupt for P0[23]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[23:23]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_24ER</name>
-                            <description>Enable rising edge interrupt for P0[24]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[24:24]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_25ER</name>
-                            <description>Enable rising edge interrupt for P0[25]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[25:25]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_26ER</name>
-                            <description>Enable rising edge interrupt for P0[26]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[26:26]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_27ER</name>
-                            <description>Enable rising edge interrupt for P0[27]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[27:27]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_28ER</name>
-                            <description>Enable rising edge interrupt for P0[28]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[28:28]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_29ER</name>
-                            <description>Enable rising edge interrupt for P0[29]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[29:29]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_30ER</name>
-                            <description>Enable rising edge interrupt for P0[30]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[30:30]</bitRange>
-                        </field>
-                        <field>
-                            <name>RESERVED</name>
-                            <description>Reserved.</description>
-                            <bitRange>[31:31]</bitRange>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>ENF0</name>
-                    <description>GPIO Interrupt Enable for Falling edge for Port 0.</description>
-                    <addressOffset>0x014</addressOffset>
-                    <access>read-write</access>
-                    <resetValue>0</resetValue>
-                    <resetMask>0xFFFFFFFF</resetMask>
-                    <fields>
-                        <field>
-                            <name>P0_0EF</name>
-                            <description>Enable falling edge interrupt for P0[0]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[0:0]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_1EF</name>
-                            <description>Enable falling edge interrupt for P0[1]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[1:1]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_2EF</name>
-                            <description>Enable falling edge interrupt for P0[2]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[2:2]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_3EF</name>
-                            <description>Enable falling edge interrupt for P0[3]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[3:3]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_4EF</name>
-                            <description>Enable falling edge interrupt for P0[4]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[4:4]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_5EF</name>
-                            <description>Enable falling edge interrupt for P0[5]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[5:5]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_6EF</name>
-                            <description>Enable falling edge interrupt for P0[6]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[6:6]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_7EF</name>
-                            <description>Enable falling edge interrupt for P0[7]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[7:7]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_8EF</name>
-                            <description>Enable falling edge interrupt for P0[8]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[8:8]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_9EF</name>
-                            <description>Enable falling edge interrupt for P0[9]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[9:9]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_10EF</name>
-                            <description>Enable falling edge interrupt for P0[10]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[10:10]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_11EF</name>
-                            <description>Enable falling edge interrupt for P0[11]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[11:11]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_12EF</name>
-                            <description>Enable falling edge interrupt for P0[12]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[12:12]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_13EF</name>
-                            <description>Enable falling edge interrupt for P0[13]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[13:13]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_14EF</name>
-                            <description>Enable falling edge interrupt for P0[14]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[14:14]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_15EF</name>
-                            <description>Enable falling edge interrupt for P0[15]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[15:15]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_16EF</name>
-                            <description>Enable falling edge interrupt for P0[16]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[16:16]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_17EF</name>
-                            <description>Enable falling edge interrupt for P0[17]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[17:17]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_18EF</name>
-                            <description>Enable falling edge interrupt for P0[18]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[18:18]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_19EF</name>
-                            <description>Enable falling edge interrupt for P0[19]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[19:19]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_20EF</name>
-                            <description>Enable falling edge interrupt for P0[20]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[20:20]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_21EF</name>
-                            <description>Enable falling edge interrupt for P0[21]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[21:21]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_22EF</name>
-                            <description>Enable falling edge interrupt for P0[22]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[22:22]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_23EF</name>
-                            <description>Enable falling edge interrupt for P0[23]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[23:23]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_24EF</name>
-                            <description>Enable falling edge interrupt for P0[24]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[24:24]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_25EF</name>
-                            <description>Enable falling edge interrupt for P0[25]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[25:25]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_26EF</name>
-                            <description>Enable falling edge interrupt for P0[26]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[26:26]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_27EF</name>
-                            <description>Enable falling edge interrupt for P0[27]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[27:27]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_28EF</name>
-                            <description>Enable falling edge interrupt for P0[28]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[28:28]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_29EF</name>
-                            <description>Enable falling edge interrupt for P0[29]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[29:29]</bitRange>
-                        </field>
-                        <field>
-                            <name>P0_30EF</name>
-                            <description>Enable falling edge interrupt for P0[30]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[30:30]</bitRange>
-                        </field>
-                        <field>
-                            <name>RESERVED</name>
-                            <description>Reserved.</description>
-                            <bitRange>[31:31]</bitRange>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>STATR2</name>
-                    <description>GPIO Interrupt Status for Rising edge for Port 0.</description>
-                    <addressOffset>0x024</addressOffset>
-                    <access>read-only</access>
-                    <resetValue>0</resetValue>
-                    <resetMask>0xFFFFFFFF</resetMask>
-                    <fields>
-                        <field>
-                            <name>P2_0REI</name>
-                            <description>Status of Rising Edge Interrupt for P2[0]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[0:0]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_1REI</name>
-                            <description>Status of Rising Edge Interrupt for P2[1]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[1:1]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_2REI</name>
-                            <description>Status of Rising Edge Interrupt for P2[2]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[2:2]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_3REI</name>
-                            <description>Status of Rising Edge Interrupt for P2[3]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[3:3]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_4REI</name>
-                            <description>Status of Rising Edge Interrupt for P2[4]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[4:4]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_5REI</name>
-                            <description>Status of Rising Edge Interrupt for P2[5]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[5:5]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_6REI</name>
-                            <description>Status of Rising Edge Interrupt for P2[6]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[6:6]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_7REI</name>
-                            <description>Status of Rising Edge Interrupt for P2[7]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[7:7]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_8REI</name>
-                            <description>Status of Rising Edge Interrupt for P2[8]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[8:8]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_9REI</name>
-                            <description>Status of Rising Edge Interrupt for P2[9]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[9:9]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_10REI</name>
-                            <description>Status of Rising Edge Interrupt for P2[10]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[10:10]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_11REI</name>
-                            <description>Status of Rising Edge Interrupt for P2[11]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[11:11]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_12REI</name>
-                            <description>Status of Rising Edge Interrupt for P2[12]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[12:12]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_13REI</name>
-                            <description>Status of Rising Edge Interrupt for P2[13]. 0 = No rising
-                                edge detected. 1 = Rising edge interrupt generated.</description>
-                            <bitRange>[13:13]</bitRange>
-                        </field>
-                        <field>
-                            <name>RESERVED</name>
-                            <description>Reserved.</description>
-                            <bitRange>[31:14]</bitRange>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>STATF2</name>
-                    <description>GPIO Interrupt Status for Falling edge for Port 0.</description>
-                    <addressOffset>0x028</addressOffset>
-                    <access>read-only</access>
-                    <resetValue>0</resetValue>
-                    <resetMask>0xFFFFFFFF</resetMask>
-                    <fields>
-                        <field>
-                            <name>P2_0FEI</name>
-                            <description>Status of Falling Edge Interrupt for P2[0]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[0:0]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_1FEI</name>
-                            <description>Status of Falling Edge Interrupt for P2[1]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[1:1]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_2FEI</name>
-                            <description>Status of Falling Edge Interrupt for P2[2]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[2:2]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_3FEI</name>
-                            <description>Status of Falling Edge Interrupt for P2[3]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[3:3]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_4FEI</name>
-                            <description>Status of Falling Edge Interrupt for P2[4]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[4:4]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_5FEI</name>
-                            <description>Status of Falling Edge Interrupt for P2[5]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[5:5]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_6FEI</name>
-                            <description>Status of Falling Edge Interrupt for P2[6]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[6:6]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_7FEI</name>
-                            <description>Status of Falling Edge Interrupt for P2[7]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[7:7]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_8FEI</name>
-                            <description>Status of Falling Edge Interrupt for P2[8]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[8:8]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_9FEI</name>
-                            <description>Status of Falling Edge Interrupt for P2[9]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[9:9]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_10FEI</name>
-                            <description>Status of Falling Edge Interrupt for P2[10]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[10:10]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_11FEI</name>
-                            <description>Status of Falling Edge Interrupt for P2[11]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[11:11]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_12FEI</name>
-                            <description>Status of Falling Edge Interrupt for P2[12]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[12:12]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_13FEI</name>
-                            <description>Status of Falling Edge Interrupt for P2[13]. 0 = No falling
-                                edge detected. 1 = Falling edge interrupt generated.</description>
-                            <bitRange>[13:13]</bitRange>
-                        </field>
-                        <field>
-                            <name>RESERVED</name>
-                            <description>Reserved.</description>
-                            <bitRange>[31:14]</bitRange>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CLR2</name>
-                    <description>GPIO Interrupt Clear.</description>
-                    <addressOffset>0x02C</addressOffset>
-                    <access>write-only</access>
-                    <resetValue>0</resetValue>
-                    <resetMask>0xFFFFFFFF</resetMask>
-                    <fields>
-                        <field>
-                            <name>P2_0CI</name>
-                            <description>Clear GPIO port Interrupts for P2[0]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[0:0]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_1CI</name>
-                            <description>Clear GPIO port Interrupts for P2[1]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[1:1]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_2CI</name>
-                            <description>Clear GPIO port Interrupts for P2[2]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[2:2]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_3CI</name>
-                            <description>Clear GPIO port Interrupts for P2[3]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[3:3]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_4CI</name>
-                            <description>Clear GPIO port Interrupts for P2[4]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[4:4]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_5CI</name>
-                            <description>Clear GPIO port Interrupts for P2[5]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[5:5]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_6CI</name>
-                            <description>Clear GPIO port Interrupts for P2[6]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[6:6]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_7CI</name>
-                            <description>Clear GPIO port Interrupts for P2[7]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[7:7]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_8CI</name>
-                            <description>Clear GPIO port Interrupts for P2[8]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[8:8]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_9CI</name>
-                            <description>Clear GPIO port Interrupts for P2[9]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[9:9]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_10CI</name>
-                            <description>Clear GPIO port Interrupts for P2[10]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[10:10]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_11CI</name>
-                            <description>Clear GPIO port Interrupts for P2[11]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[11:11]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_12CI</name>
-                            <description>Clear GPIO port Interrupts for P2[12]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[12:12]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_13CI</name>
-                            <description>Clear GPIO port Interrupts for P2[13]. 0 = No effect. 1 =
-                                Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
-                            <bitRange>[13:13]</bitRange>
-                        </field>
-                        <field>
-                            <name>RESERVED</name>
-                            <description>Reserved.</description>
-                            <bitRange>[31:14]</bitRange>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>ENR2</name>
-                    <description>GPIO Interrupt Enable for Rising edge for Port 0.</description>
-                    <addressOffset>0x030</addressOffset>
-                    <access>read-write</access>
-                    <resetValue>0</resetValue>
-                    <resetMask>0xFFFFFFFF</resetMask>
-                    <fields>
-                        <field>
-                            <name>P2_0ER</name>
-                            <description>Enable rising edge interrupt for P2[0]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[0:0]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_1ER</name>
-                            <description>Enable rising edge interrupt for P2[1]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[1:1]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_2ER</name>
-                            <description>Enable rising edge interrupt for P2[2]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[2:2]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_3ER</name>
-                            <description>Enable rising edge interrupt for P2[3]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[3:3]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_4ER</name>
-                            <description>Enable rising edge interrupt for P2[4]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[4:4]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_5ER</name>
-                            <description>Enable rising edge interrupt for P2[5]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[5:5]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_6ER</name>
-                            <description>Enable rising edge interrupt for P2[6]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[6:6]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_7ER</name>
-                            <description>Enable rising edge interrupt for P2[7]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[7:7]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_8ER</name>
-                            <description>Enable rising edge interrupt for P2[8]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[8:8]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_9ER</name>
-                            <description>Enable rising edge interrupt for P2[9]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[9:9]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_10ER</name>
-                            <description>Enable rising edge interrupt for P2[10]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[10:10]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_11ER</name>
-                            <description>Enable rising edge interrupt for P2[11]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[11:11]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_12ER</name>
-                            <description>Enable rising edge interrupt for P2[12]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[12:12]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_13ER</name>
-                            <description>Enable rising edge interrupt for P2[13]. 0 = Disable rising
-                                edge interrupt. 1 = Enable rising edge interrupt.</description>
-                            <bitRange>[13:13]</bitRange>
-                        </field>
-                        <field>
-                            <name>RESERVED</name>
-                            <description>Reserved.</description>
-                            <bitRange>[31:14]</bitRange>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>ENF2</name>
-                    <description>GPIO Interrupt Enable for Falling edge for Port 0.</description>
-                    <addressOffset>0x034</addressOffset>
-                    <access>read-write</access>
-                    <resetValue>0</resetValue>
-                    <resetMask>0xFFFFFFFF</resetMask>
-                    <fields>
-                        <field>
-                            <name>P2_0EF</name>
-                            <description>Enable falling edge interrupt for P2[0]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[0:0]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_1EF</name>
-                            <description>Enable falling edge interrupt for P2[1]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[1:1]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_2EF</name>
-                            <description>Enable falling edge interrupt for P2[2]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[2:2]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_3EF</name>
-                            <description>Enable falling edge interrupt for P2[3]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[3:3]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_4EF</name>
-                            <description>Enable falling edge interrupt for P2[4]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[4:4]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_5EF</name>
-                            <description>Enable falling edge interrupt for P2[5]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[5:5]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_6EF</name>
-                            <description>Enable falling edge interrupt for P2[6]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[6:6]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_7EF</name>
-                            <description>Enable falling edge interrupt for P2[7]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[7:7]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_8EF</name>
-                            <description>Enable falling edge interrupt for P2[8]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[8:8]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_9EF</name>
-                            <description>Enable falling edge interrupt for P2[9]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[9:9]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_10EF</name>
-                            <description>Enable falling edge interrupt for P2[10]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[10:10]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_11EF</name>
-                            <description>Enable falling edge interrupt for P2[11]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[11:11]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_12EF</name>
-                            <description>Enable falling edge interrupt for P2[12]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[12:12]</bitRange>
-                        </field>
-                        <field>
-                            <name>P2_13EF</name>
-                            <description>Enable falling edge interrupt for P2[13]. 0 = Disable
-                                falling edge interrupt. 1 = Enable falling edge interrupt.</description>
-                            <bitRange>[13:13]</bitRange>
-                        </field>
-                        <field>
-                            <name>RESERVED</name>
-                            <description>Reserved.</description>
-                            <bitRange>[31:14]</bitRange>
-                        </field>
-                    </fields>
-                </register>
+                    <register>
+                        <name>STATR</name>
+                        <description>GPIO Interrupt Status for Rising edge for Port 0.</description>
+                        <addressOffset>0x000</addressOffset>
+                        <access>read-only</access>
+                        <resetValue>0</resetValue>
+                        <resetMask>0xFFFFFFFF</resetMask>
+                        <fields>
+                            <field>
+                                <name>P_0REI</name>
+                                <description>Status of Rising Edge Interrupt for P[0]. 0 = No rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[0:0]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_1REI</name>
+                                <description>Status of Rising Edge Interrupt for P[1]. 0 = No rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[1:1]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_2REI</name>
+                                <description>Status of Rising Edge Interrupt for P[2]. 0 = No rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[2:2]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_3REI</name>
+                                <description>Status of Rising Edge Interrupt for P[3]. 0 = No rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[3:3]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_4REI</name>
+                                <description>Status of Rising Edge Interrupt for P[4]. 0 = No rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[4:4]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_5REI</name>
+                                <description>Status of Rising Edge Interrupt for P[5]. 0 = No rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[5:5]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_6REI</name>
+                                <description>Status of Rising Edge Interrupt for P[6]. 0 = No rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[6:6]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_7REI</name>
+                                <description>Status of Rising Edge Interrupt for P[7]. 0 = No rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[7:7]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_8REI</name>
+                                <description>Status of Rising Edge Interrupt for P[8]. 0 = No rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[8:8]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_9REI</name>
+                                <description>Status of Rising Edge Interrupt for P[9]. 0 = No rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[9:9]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_10REI</name>
+                                <description>Status of Rising Edge Interrupt for P[10]. 0 = No
+                                    rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[10:10]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_11REI</name>
+                                <description>Status of Rising Edge Interrupt for P[11]. 0 = No
+                                    rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[11:11]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_12REI</name>
+                                <description>Status of Rising Edge Interrupt for P[12]. 0 = No
+                                    rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[12:12]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_13REI</name>
+                                <description>Status of Rising Edge Interrupt for P[13]. 0 = No
+                                    rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[13:13]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_14REI</name>
+                                <description>Status of Rising Edge Interrupt for P[14]. 0 = No
+                                    rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[14:14]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_15REI</name>
+                                <description>Status of Rising Edge Interrupt for P[15]. 0 = No
+                                    rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[15:15]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_16REI</name>
+                                <description>Status of Rising Edge Interrupt for P[16]. 0 = No
+                                    rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[16:16]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_17REI</name>
+                                <description>Status of Rising Edge Interrupt for P[17]. 0 = No
+                                    rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[17:17]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_18REI</name>
+                                <description>Status of Rising Edge Interrupt for P[18]. 0 = No
+                                    rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[18:18]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_19REI</name>
+                                <description>Status of Rising Edge Interrupt for P[19]. 0 = No
+                                    rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[19:19]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_20REI</name>
+                                <description>Status of Rising Edge Interrupt for P[20]. 0 = No
+                                    rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[20:20]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_21REI</name>
+                                <description>Status of Rising Edge Interrupt for P[21]. 0 = No
+                                    rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[21:21]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_22REI</name>
+                                <description>Status of Rising Edge Interrupt for P[22]. 0 = No
+                                    rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[22:22]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_23REI</name>
+                                <description>Status of Rising Edge Interrupt for P[23]. 0 = No
+                                    rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[23:23]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_24REI</name>
+                                <description>Status of Rising Edge Interrupt for P[24]. 0 = No
+                                    rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[24:24]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_25REI</name>
+                                <description>Status of Rising Edge Interrupt for P[25]. 0 = No
+                                    rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[25:25]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_26REI</name>
+                                <description>Status of Rising Edge Interrupt for P[26]. 0 = No
+                                    rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[26:26]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_27REI</name>
+                                <description>Status of Rising Edge Interrupt for P[27]. 0 = No
+                                    rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[27:27]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_28REI</name>
+                                <description>Status of Rising Edge Interrupt for P[28]. 0 = No
+                                    rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[28:28]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_29REI</name>
+                                <description>Status of Rising Edge Interrupt for P[29]. 0 = No
+                                    rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[29:29]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_30REI</name>
+                                <description>Status of Rising Edge Interrupt for P[30]. 0 = No
+                                    rising
+                                    edge detected. 1 = Rising edge interrupt generated.</description>
+                                <bitRange>[30:30]</bitRange>
+                            </field>
+                            <field>
+                                <name>RESERVED</name>
+                                <description>Reserved.</description>
+                                <bitRange>[31:31]</bitRange>
+                            </field>
+                        </fields>
+                    </register>
+                    <register>
+                        <name>STATF</name>
+                        <description>GPIO Interrupt Status for Falling edge for Port 0.</description>
+                        <addressOffset>0x004</addressOffset>
+                        <access>read-only</access>
+                        <resetValue>0</resetValue>
+                        <resetMask>0xFFFFFFFF</resetMask>
+                        <fields>
+                            <field>
+                                <name>P_0FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[0]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[0:0]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_1FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[1]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[1:1]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_2FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[2]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[2:2]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_3FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[3]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[3:3]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_4FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[4]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[4:4]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_5FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[5]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[5:5]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_6FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[6]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[6:6]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_7FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[7]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[7:7]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_8FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[8]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[8:8]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_9FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[9]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[9:9]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_10FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[10]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[10:10]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_11FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[11]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[11:11]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_12FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[12]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[12:12]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_13FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[13]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[13:13]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_14FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[14]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[14:14]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_15FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[15]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[15:15]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_16FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[16]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[16:16]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_17FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[17]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[17:17]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_18FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[18]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[18:18]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_19FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[19]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[19:19]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_20FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[20]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[20:20]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_21FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[21]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[21:21]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_22FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[22]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[22:22]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_23FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[23]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[23:23]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_24FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[24]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[24:24]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_25FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[25]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[25:25]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_26FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[26]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[26:26]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_27FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[27]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[27:27]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_28FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[28]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[28:28]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_29FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[29]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[29:29]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_30FEI</name>
+                                <description>Status of Falling Edge Interrupt for P[30]. 0 = No
+                                    falling
+                                    edge detected. 1 = Falling edge interrupt generated.</description>
+                                <bitRange>[30:30]</bitRange>
+                            </field>
+                            <field>
+                                <name>RESERVED</name>
+                                <description>Reserved.</description>
+                                <bitRange>[31:31]</bitRange>
+                            </field>
+                        </fields>
+                    </register>
+                    <register>
+                        <name>CLR</name>
+                        <description>GPIO Interrupt Clear.</description>
+                        <addressOffset>0x008</addressOffset>
+                        <access>write-only</access>
+                        <resetValue>0</resetValue>
+                        <resetMask>0xFFFFFFFF</resetMask>
+                        <fields>
+                            <field>
+                                <name>P_0CI</name>
+                                <description>Clear GPIO port Interrupts for P[0]. 0 = No effect. 1 =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[0:0]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_1CI</name>
+                                <description>Clear GPIO port Interrupts for P[1]. 0 = No effect. 1 =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[1:1]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_2CI</name>
+                                <description>Clear GPIO port Interrupts for P[2]. 0 = No effect. 1 =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[2:2]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_3CI</name>
+                                <description>Clear GPIO port Interrupts for P[3]. 0 = No effect. 1 =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[3:3]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_4CI</name>
+                                <description>Clear GPIO port Interrupts for P[4]. 0 = No effect. 1 =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[4:4]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_5CI</name>
+                                <description>Clear GPIO port Interrupts for P[5]. 0 = No effect. 1 =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[5:5]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_6CI</name>
+                                <description>Clear GPIO port Interrupts for P[6]. 0 = No effect. 1 =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[6:6]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_7CI</name>
+                                <description>Clear GPIO port Interrupts for P[7]. 0 = No effect. 1 =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[7:7]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_8CI</name>
+                                <description>Clear GPIO port Interrupts for P[8]. 0 = No effect. 1 =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[8:8]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_9CI</name>
+                                <description>Clear GPIO port Interrupts for P[9]. 0 = No effect. 1 =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[9:9]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_10CI</name>
+                                <description>Clear GPIO port Interrupts for P[10]. 0 = No effect. 1
+                                    =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[10:10]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_11CI</name>
+                                <description>Clear GPIO port Interrupts for P[11]. 0 = No effect. 1
+                                    =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[11:11]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_12CI</name>
+                                <description>Clear GPIO port Interrupts for P[12]. 0 = No effect. 1
+                                    =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[12:12]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_13CI</name>
+                                <description>Clear GPIO port Interrupts for P[13]. 0 = No effect. 1
+                                    =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[13:13]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_14CI</name>
+                                <description>Clear GPIO port Interrupts for P[14]. 0 = No effect. 1
+                                    =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[14:14]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_15CI</name>
+                                <description>Clear GPIO port Interrupts for P[15]. 0 = No effect. 1
+                                    =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[15:15]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_16CI</name>
+                                <description>Clear GPIO port Interrupts for P[16]. 0 = No effect. 1
+                                    =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[16:16]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_17CI</name>
+                                <description>Clear GPIO port Interrupts for P[17]. 0 = No effect. 1
+                                    =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[17:17]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_18CI</name>
+                                <description>Clear GPIO port Interrupts for P[18]. 0 = No effect. 1
+                                    =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[18:18]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_19CI</name>
+                                <description>Clear GPIO port Interrupts for P[19]. 0 = No effect. 1
+                                    =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[19:19]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_20CI</name>
+                                <description>Clear GPIO port Interrupts for P[20]. 0 = No effect. 1
+                                    =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[20:20]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_21CI</name>
+                                <description>Clear GPIO port Interrupts for P[21]. 0 = No effect. 1
+                                    =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[21:21]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_22CI</name>
+                                <description>Clear GPIO port Interrupts for P[22]. 0 = No effect. 1
+                                    =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[22:22]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_23CI</name>
+                                <description>Clear GPIO port Interrupts for P[23]. 0 = No effect. 1
+                                    =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[23:23]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_24CI</name>
+                                <description>Clear GPIO port Interrupts for P[24]. 0 = No effect. 1
+                                    =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[24:24]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_25CI</name>
+                                <description>Clear GPIO port Interrupts for P[25]. 0 = No effect. 1
+                                    =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[25:25]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_26CI</name>
+                                <description>Clear GPIO port Interrupts for P[26]. 0 = No effect. 1
+                                    =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[26:26]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_27CI</name>
+                                <description>Clear GPIO port Interrupts for P[27]. 0 = No effect. 1
+                                    =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[27:27]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_28CI</name>
+                                <description>Clear GPIO port Interrupts for P[28]. 0 = No effect. 1
+                                    =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[28:28]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_29CI</name>
+                                <description>Clear GPIO port Interrupts for P[29]. 0 = No effect. 1
+                                    =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[29:29]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_30CI</name>
+                                <description>Clear GPIO port Interrupts for P[30]. 0 = No effect. 1
+                                    =
+                                    Clear corresponding bits in IOnINTSTATR and IOnSTATF.</description>
+                                <bitRange>[30:30]</bitRange>
+                            </field>
+                            <field>
+                                <name>RESERVED</name>
+                                <description>Reserved.</description>
+                                <bitRange>[31:31]</bitRange>
+                            </field>
+                        </fields>
+                    </register>
+                    <register>
+                        <name>ENR</name>
+                        <description>GPIO Interrupt Enable for Rising edge for Port 0.</description>
+                        <addressOffset>0x00C</addressOffset>
+                        <access>read-write</access>
+                        <resetValue>0</resetValue>
+                        <resetMask>0xFFFFFFFF</resetMask>
+                        <fields>
+                            <field>
+                                <name>P_0ER</name>
+                                <description>Enable rising edge interrupt for P[0]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[0:0]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_1ER</name>
+                                <description>Enable rising edge interrupt for P[1]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[1:1]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_2ER</name>
+                                <description>Enable rising edge interrupt for P[2]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[2:2]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_3ER</name>
+                                <description>Enable rising edge interrupt for P[3]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[3:3]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_4ER</name>
+                                <description>Enable rising edge interrupt for P[4]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[4:4]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_5ER</name>
+                                <description>Enable rising edge interrupt for P[5]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[5:5]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_6ER</name>
+                                <description>Enable rising edge interrupt for P[6]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[6:6]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_7ER</name>
+                                <description>Enable rising edge interrupt for P[7]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[7:7]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_8ER</name>
+                                <description>Enable rising edge interrupt for P[8]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[8:8]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_9ER</name>
+                                <description>Enable rising edge interrupt for P[9]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[9:9]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_10ER</name>
+                                <description>Enable rising edge interrupt for P[10]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[10:10]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_11ER</name>
+                                <description>Enable rising edge interrupt for P[11]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[11:11]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_12ER</name>
+                                <description>Enable rising edge interrupt for P[12]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[12:12]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_13ER</name>
+                                <description>Enable rising edge interrupt for P[13]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[13:13]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_14ER</name>
+                                <description>Enable rising edge interrupt for P[14]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[14:14]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_15ER</name>
+                                <description>Enable rising edge interrupt for P[15]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[15:15]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_16ER</name>
+                                <description>Enable rising edge interrupt for P[16]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[16:16]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_17ER</name>
+                                <description>Enable rising edge interrupt for P[17]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[17:17]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_18ER</name>
+                                <description>Enable rising edge interrupt for P[18]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[18:18]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_19ER</name>
+                                <description>Enable rising edge interrupt for P[19]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[19:19]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_20ER</name>
+                                <description>Enable rising edge interrupt for P[20]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[20:20]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_21ER</name>
+                                <description>Enable rising edge interrupt for P[21]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[21:21]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_22ER</name>
+                                <description>Enable rising edge interrupt for P[22]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[22:22]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_23ER</name>
+                                <description>Enable rising edge interrupt for P[23]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[23:23]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_24ER</name>
+                                <description>Enable rising edge interrupt for P[24]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[24:24]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_25ER</name>
+                                <description>Enable rising edge interrupt for P[25]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[25:25]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_26ER</name>
+                                <description>Enable rising edge interrupt for P[26]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[26:26]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_27ER</name>
+                                <description>Enable rising edge interrupt for P[27]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[27:27]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_28ER</name>
+                                <description>Enable rising edge interrupt for P[28]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[28:28]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_29ER</name>
+                                <description>Enable rising edge interrupt for P[29]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[29:29]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_30ER</name>
+                                <description>Enable rising edge interrupt for P[30]. 0 = Disable
+                                    rising
+                                    edge interrupt. 1 = Enable rising edge interrupt.</description>
+                                <bitRange>[30:30]</bitRange>
+                            </field>
+                            <field>
+                                <name>RESERVED</name>
+                                <description>Reserved.</description>
+                                <bitRange>[31:31]</bitRange>
+                            </field>
+                        </fields>
+                    </register>
+                    <register>
+                        <name>ENF</name>
+                        <description>GPIO Interrupt Enable for Falling edge for Port 0.</description>
+                        <addressOffset>0x010</addressOffset>
+                        <access>read-write</access>
+                        <resetValue>0</resetValue>
+                        <resetMask>0xFFFFFFFF</resetMask>
+                        <fields>
+                            <field>
+                                <name>P_0EF</name>
+                                <description>Enable falling edge interrupt for P[0]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[0:0]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_1EF</name>
+                                <description>Enable falling edge interrupt for P[1]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[1:1]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_2EF</name>
+                                <description>Enable falling edge interrupt for P[2]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[2:2]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_3EF</name>
+                                <description>Enable falling edge interrupt for P[3]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[3:3]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_4EF</name>
+                                <description>Enable falling edge interrupt for P[4]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[4:4]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_5EF</name>
+                                <description>Enable falling edge interrupt for P[5]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[5:5]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_6EF</name>
+                                <description>Enable falling edge interrupt for P[6]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[6:6]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_7EF</name>
+                                <description>Enable falling edge interrupt for P[7]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[7:7]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_8EF</name>
+                                <description>Enable falling edge interrupt for P[8]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[8:8]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_9EF</name>
+                                <description>Enable falling edge interrupt for P[9]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[9:9]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_10EF</name>
+                                <description>Enable falling edge interrupt for P[10]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[10:10]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_11EF</name>
+                                <description>Enable falling edge interrupt for P[11]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[11:11]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_12EF</name>
+                                <description>Enable falling edge interrupt for P[12]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[12:12]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_13EF</name>
+                                <description>Enable falling edge interrupt for P[13]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[13:13]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_14EF</name>
+                                <description>Enable falling edge interrupt for P[14]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[14:14]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_15EF</name>
+                                <description>Enable falling edge interrupt for P[15]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[15:15]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_16EF</name>
+                                <description>Enable falling edge interrupt for P[16]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[16:16]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_17EF</name>
+                                <description>Enable falling edge interrupt for P[17]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[17:17]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_18EF</name>
+                                <description>Enable falling edge interrupt for P[18]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[18:18]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_19EF</name>
+                                <description>Enable falling edge interrupt for P[19]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[19:19]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_20EF</name>
+                                <description>Enable falling edge interrupt for P[20]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[20:20]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_21EF</name>
+                                <description>Enable falling edge interrupt for P[21]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[21:21]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_22EF</name>
+                                <description>Enable falling edge interrupt for P[22]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[22:22]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_23EF</name>
+                                <description>Enable falling edge interrupt for P[23]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[23:23]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_24EF</name>
+                                <description>Enable falling edge interrupt for P[24]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[24:24]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_25EF</name>
+                                <description>Enable falling edge interrupt for P[25]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[25:25]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_26EF</name>
+                                <description>Enable falling edge interrupt for P[26]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[26:26]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_27EF</name>
+                                <description>Enable falling edge interrupt for P[27]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[27:27]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_28EF</name>
+                                <description>Enable falling edge interrupt for P[28]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[28:28]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_29EF</name>
+                                <description>Enable falling edge interrupt for P[29]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[29:29]</bitRange>
+                            </field>
+                            <field>
+                                <name>P_30EF</name>
+                                <description>Enable falling edge interrupt for P[30]. 0 = Disable
+                                    falling edge interrupt. 1 = Enable falling edge interrupt.</description>
+                                <bitRange>[30:30]</bitRange>
+                            </field>
+                            <field>
+                                <name>RESERVED</name>
+                                <description>Reserved.</description>
+                                <bitRange>[31:31]</bitRange>
+                            </field>
+                        </fields>
+                    </register>
+                </cluster>
             </registers>
         </peripheral>
         <peripheral>
