@@ -52,7 +52,6 @@
             <name>HSMCI</name>
             <version>6449P</version>
             <description>High Speed MultiMedia Card Interface</description>
-            <prependToName>HSMCI_</prependToName>
             <baseAddress>0x40000000</baseAddress>
             <addressBlock>
                 <offset>0</offset>
@@ -1839,7 +1838,6 @@
             <name>SSC</name>
             <version>6078O</version>
             <description>Synchronous Serial Controller</description>
-            <prependToName>SSC_</prependToName>
             <baseAddress>0x40004000</baseAddress>
             <addressBlock>
                 <offset>0</offset>
@@ -3211,7 +3209,6 @@
             <name>SPI</name>
             <version>6088ZF</version>
             <description>Serial Peripheral Interface</description>
-            <prependToName>SPI_</prependToName>
             <baseAddress>0x40008000</baseAddress>
             <addressBlock>
                 <offset>0</offset>
@@ -4109,7 +4106,6 @@
             <version>6082ZG</version>
             <description>Timer Counter 0</description>
             <groupName>TC</groupName>
-            <prependToName>TC0_</prependToName>
             <baseAddress>0x40010000</baseAddress>
             <addressBlock>
                 <offset>0</offset>
@@ -7721,7 +7717,6 @@
             <version>6212Z</version>
             <description>Two-wire Interface 0</description>
             <groupName>TWI</groupName>
-            <prependToName>TWI0_</prependToName>
             <baseAddress>0x40018000</baseAddress>
             <addressBlock>
                 <offset>0</offset>
@@ -8591,7 +8586,6 @@
             <version>6212Z</version>
             <description>Two-wire Interface 1</description>
             <groupName>TWI</groupName>
-            <prependToName>TWI1_</prependToName>
             <baseAddress>0x4001C000</baseAddress>
             <addressBlock>
                 <offset>0</offset>
@@ -9460,7 +9454,6 @@
             <name>PWM</name>
             <version>6343T</version>
             <description>Pulse Width Modulation Controller</description>
-            <prependToName>PWM_</prependToName>
             <baseAddress>0x40020000</baseAddress>
             <addressBlock>
                 <offset>0</offset>
@@ -13887,7 +13880,6 @@
             <version>6089ZO</version>
             <description>Universal Synchronous Asynchronous Receiver Transmitter 0</description>
             <groupName>USART</groupName>
-            <prependToName>USART0_</prependToName>
             <baseAddress>0x40024000</baseAddress>
             <addressBlock>
                 <offset>0</offset>
@@ -15954,7 +15946,6 @@
             <version>6089ZO</version>
             <description>Universal Synchronous Asynchronous Receiver Transmitter 1</description>
             <groupName>USART</groupName>
-            <prependToName>USART1_</prependToName>
             <baseAddress>0x40028000</baseAddress>
             <addressBlock>
                 <offset>0</offset>
@@ -18020,7 +18011,6 @@
             <name>UDP</name>
             <version>6083Z</version>
             <description>USB Device Port</description>
-            <prependToName>UDP_</prependToName>
             <baseAddress>0x40034000</baseAddress>
             <addressBlock>
                 <offset>0</offset>
@@ -18979,7 +18969,6 @@
             <name>ADC</name>
             <version>6489ZA</version>
             <description>Analog-to-Digital Converter</description>
-            <prependToName>ADC_</prependToName>
             <baseAddress>0x40038000</baseAddress>
             <addressBlock>
                 <offset>0</offset>
@@ -21720,7 +21709,6 @@
             <name>DACC</name>
             <version>6461K</version>
             <description>Digital-to-Analog Converter Controller</description>
-            <prependToName>DACC_</prependToName>
             <baseAddress>0x4003C000</baseAddress>
             <addressBlock>
                 <offset>0</offset>
@@ -22688,7 +22676,6 @@
             <name>ACC</name>
             <version>6490G</version>
             <description>Analog Comparator Controller</description>
-            <prependToName>ACC_</prependToName>
             <baseAddress>0x40040000</baseAddress>
             <addressBlock>
                 <offset>0</offset>
@@ -23098,7 +23085,6 @@
             <name>CRCCU</name>
             <version>11001I</version>
             <description>Cyclic Redundancy Check Calculation Unit</description>
-            <prependToName>CRCCU_</prependToName>
             <baseAddress>0x40044000</baseAddress>
             <addressBlock>
                 <offset>0</offset>
@@ -25855,7 +25841,6 @@
             <version>6418O</version>
             <description>Universal Asynchronous Receiver Transmitter 0</description>
             <groupName>UART</groupName>
-            <prependToName>UART0_</prependToName>
             <baseAddress>0x400E0600</baseAddress>
             <addressBlock>
                 <offset>0</offset>
@@ -26568,7 +26553,6 @@
             <name>CHIPID</name>
             <version>6417ZB</version>
             <description>Chip Identifier</description>
-            <prependToName>CHIPID_</prependToName>
             <baseAddress>0x400E0740</baseAddress>
             <addressBlock>
                 <offset>0</offset>
@@ -26937,7 +26921,6 @@
             <version>6418O</version>
             <description>Universal Asynchronous Receiver Transmitter 1</description>
             <groupName>UART</groupName>
-            <prependToName>UART1_</prependToName>
             <baseAddress>0x400E0800</baseAddress>
             <addressBlock>
                 <offset>0</offset>
@@ -27651,7 +27634,6 @@
             <version>6450X</version>
             <description>Embedded Flash Controller 0</description>
             <groupName>EFC</groupName>
-            <prependToName>EFC0_</prependToName>
             <baseAddress>0x400E0A00</baseAddress>
             <addressBlock>
                 <offset>0</offset>
@@ -27919,7 +27901,6 @@
             <version>11004U</version>
             <description>Parallel Input/Output Controller A</description>
             <groupName>PIO</groupName>
-            <prependToName>PIOA_</prependToName>
             <baseAddress>0x400E0E00</baseAddress>
             <addressBlock>
                 <offset>0</offset>
@@ -38637,7 +38618,6 @@
             <version>11004U</version>
             <description>Parallel Input/Output Controller B</description>
             <groupName>PIO</groupName>
-            <prependToName>PIOB_</prependToName>
             <baseAddress>0x400E1000</baseAddress>
             <addressBlock>
                 <offset>0</offset>
@@ -49226,7 +49206,6 @@
             <version>11009J</version>
             <description>Reset Controller</description>
             <groupName>SYSC</groupName>
-            <prependToName>RSTC_</prependToName>
             <baseAddress>0x400E1400</baseAddress>
             <addressBlock>
                 <offset>0</offset>
@@ -49396,7 +49375,6 @@
             <version>6452Z</version>
             <description>Supply Controller</description>
             <groupName>SYSC</groupName>
-            <prependToName>SUPC_</prependToName>
             <baseAddress>0x400E1410</baseAddress>
             <addressBlock>
                 <offset>0</offset>
@@ -51196,7 +51174,6 @@
             <version>6081M</version>
             <description>Real-time Timer</description>
             <groupName>SYSC</groupName>
-            <prependToName>RTT_</prependToName>
             <baseAddress>0x400E1430</baseAddress>
             <addressBlock>
                 <offset>0</offset>
@@ -51321,7 +51298,6 @@
             <version>6080I</version>
             <description>Watchdog Timer</description>
             <groupName>SYSC</groupName>
-            <prependToName>WDT_</prependToName>
             <baseAddress>0x400E1450</baseAddress>
             <addressBlock>
                 <offset>0</offset>
@@ -51457,7 +51433,6 @@
             <version>6056U</version>
             <description>Real-time Clock</description>
             <groupName>SYSC</groupName>
-            <prependToName>RTC_</prependToName>
             <baseAddress>0x400E1460</baseAddress>
             <addressBlock>
                 <offset>0</offset>
@@ -52326,7 +52301,6 @@
             <version>6378H</version>
             <description>General Purpose Backup Registers</description>
             <groupName>SYSC</groupName>
-            <prependToName>GPBR_</prependToName>
             <baseAddress>0x400E1490</baseAddress>
             <addressBlock>
                 <offset>0</offset>
