@@ -39,7 +39,7 @@
     <cpu>
         <name>CM4</name>
         <revision>r0p1</revision>
-        <endian>selectable</endian>
+        <endian>little</endian>
         <mpuPresent>true</mpuPresent>
         <fpuPresent>false</fpuPresent>
         <nvicPrioBits>4</nvicPrioBits>
