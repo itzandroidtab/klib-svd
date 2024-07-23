@@ -4113,8 +4113,16 @@
                 <usage>registers</usage>
             </addressBlock>
             <interrupt>
-                <name>TC0</name>
+                <name>TC0_CH0</name>
                 <value>23</value>
+            </interrupt>
+            <interrupt>
+                <name>TC0_CH1</name>
+                <value>24</value>
+            </interrupt>
+            <interrupt>
+                <name>TC0_CH2</name>
+                <value>25</value>
             </interrupt>
             <registers>
                 <cluster>
@@ -5582,8 +5590,16 @@
             <groupName>TC</groupName>
             <baseAddress>0x40014000</baseAddress>
             <interrupt>
-                <name>TC1</name>
-                <value>24</value>
+                <name>TC1_CH0</name>
+                <value>26</value>
+            </interrupt>
+            <interrupt>
+                <name>TC1_CH1</name>
+                <value>27</value>
+            </interrupt>
+            <interrupt>
+                <name>TC1_CH2</name>
+                <value>28</value>
             </interrupt>
         </peripheral>
         <peripheral>
@@ -47086,6 +47102,10 @@
                 <size>0x200</size>
                 <usage>registers</usage>
             </addressBlock>
+            <interrupt>
+                <name>RSTC</name>
+                <value>1</value>
+            </interrupt>
             <registers>
                 <register>
                     <name>CR</name>
@@ -47255,6 +47275,10 @@
                 <size>0x200</size>
                 <usage>registers</usage>
             </addressBlock>
+            <interrupt>
+                <name>SUPC</name>
+                <value>0</value>
+            </interrupt>
             <registers>
                 <register>
                     <name>CR</name>
@@ -49054,6 +49078,10 @@
                 <size>0x200</size>
                 <usage>registers</usage>
             </addressBlock>
+            <interrupt>
+                <name>RTT</name>
+                <value>3</value>
+            </interrupt>
             <registers>
                 <register>
                     <name>MR</name>
@@ -49178,6 +49206,10 @@
                 <size>0x200</size>
                 <usage>registers</usage>
             </addressBlock>
+            <interrupt>
+                <name>WDT</name>
+                <value>4</value>
+            </interrupt>
             <registers>
                 <register>
                     <name>CR</name>
@@ -49313,6 +49345,10 @@
                 <size>0x200</size>
                 <usage>registers</usage>
             </addressBlock>
+            <interrupt>
+                <name>RTC</name>
+                <value>2</value>
+            </interrupt>
             <registers>
                 <register>
                     <name>CR</name>
