@@ -9522,2118 +9522,418 @@
                         </field>
                     </fields>
                 </register>
-                <register>
-                    <name>CMPV0</name>
-                    <description>PWM Comparison 0 Value Register</description>
+                <cluster>
+                    <dim>8</dim>
+                    <dimIncrement>0x10</dimIncrement>
+                    <dimIndex>0-8</dimIndex>
+                    <name>CMP[%s]</name>
+                    <description>PWM channel compare registers</description>
+                    <headerStructName>pwm_compare_channel</headerStructName>
                     <addressOffset>0x00000130</addressOffset>
-                    <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CV</name>
-                            <description>Comparison x Value</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CVM</name>
-                            <description>Comparison x Value Mode</description>
-                            <bitOffset>24</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPVUPD0</name>
-                    <description>PWM Comparison 0 Value Update Register</description>
-                    <addressOffset>0x00000134</addressOffset>
-                    <size>32</size>
-                    <access>write-only</access>
-                    <fields>
-                        <field>
-                            <name>CVUPD</name>
-                            <description>Comparison x Value Update</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CVMUPD</name>
-                            <description>Comparison x Value Mode Update</description>
-                            <bitOffset>24</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPM0</name>
-                    <description>PWM Comparison 0 Mode Register</description>
-                    <addressOffset>0x00000138</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CEN</name>
-                            <description>Comparison x Enable</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CTR</name>
-                            <description>Comparison x Trigger</description>
-                            <bitOffset>4</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CPR</name>
-                            <description>Comparison x Period</description>
-                            <bitOffset>8</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CPRCNT</name>
-                            <description>Comparison x Period Counter</description>
-                            <bitOffset>12</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CUPR</name>
-                            <description>Comparison x Update Period</description>
-                            <bitOffset>16</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CUPRCNT</name>
-                            <description>Comparison x Update Period Counter</description>
-                            <bitOffset>20</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPMUPD0</name>
-                    <description>PWM Comparison 0 Mode Update Register</description>
-                    <addressOffset>0x0000013C</addressOffset>
-                    <size>32</size>
-                    <access>write-only</access>
-                    <fields>
-                        <field>
-                            <name>CENUPD</name>
-                            <description>Comparison x Enable Update</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CTRUPD</name>
-                            <description>Comparison x Trigger Update</description>
-                            <bitOffset>4</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CPRUPD</name>
-                            <description>Comparison x Period Update</description>
-                            <bitOffset>8</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CUPRUPD</name>
-                            <description>Comparison x Update Period Update</description>
-                            <bitOffset>16</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPV1</name>
-                    <description>PWM Comparison 1 Value Register</description>
-                    <addressOffset>0x00000140</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CV</name>
-                            <description>Comparison x Value</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CVM</name>
-                            <description>Comparison x Value Mode</description>
-                            <bitOffset>24</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPVUPD1</name>
-                    <description>PWM Comparison 1 Value Update Register</description>
-                    <addressOffset>0x00000144</addressOffset>
-                    <size>32</size>
-                    <access>write-only</access>
-                    <fields>
-                        <field>
-                            <name>CVUPD</name>
-                            <description>Comparison x Value Update</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CVMUPD</name>
-                            <description>Comparison x Value Mode Update</description>
-                            <bitOffset>24</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPM1</name>
-                    <description>PWM Comparison 1 Mode Register</description>
-                    <addressOffset>0x00000148</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CEN</name>
-                            <description>Comparison x Enable</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CTR</name>
-                            <description>Comparison x Trigger</description>
-                            <bitOffset>4</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CPR</name>
-                            <description>Comparison x Period</description>
-                            <bitOffset>8</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CPRCNT</name>
-                            <description>Comparison x Period Counter</description>
-                            <bitOffset>12</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CUPR</name>
-                            <description>Comparison x Update Period</description>
-                            <bitOffset>16</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CUPRCNT</name>
-                            <description>Comparison x Update Period Counter</description>
-                            <bitOffset>20</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPMUPD1</name>
-                    <description>PWM Comparison 1 Mode Update Register</description>
-                    <addressOffset>0x0000014C</addressOffset>
-                    <size>32</size>
-                    <access>write-only</access>
-                    <fields>
-                        <field>
-                            <name>CENUPD</name>
-                            <description>Comparison x Enable Update</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CTRUPD</name>
-                            <description>Comparison x Trigger Update</description>
-                            <bitOffset>4</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CPRUPD</name>
-                            <description>Comparison x Period Update</description>
-                            <bitOffset>8</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CUPRUPD</name>
-                            <description>Comparison x Update Period Update</description>
-                            <bitOffset>16</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPV2</name>
-                    <description>PWM Comparison 2 Value Register</description>
-                    <addressOffset>0x00000150</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CV</name>
-                            <description>Comparison x Value</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CVM</name>
-                            <description>Comparison x Value Mode</description>
-                            <bitOffset>24</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPVUPD2</name>
-                    <description>PWM Comparison 2 Value Update Register</description>
-                    <addressOffset>0x00000154</addressOffset>
-                    <size>32</size>
-                    <access>write-only</access>
-                    <fields>
-                        <field>
-                            <name>CVUPD</name>
-                            <description>Comparison x Value Update</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CVMUPD</name>
-                            <description>Comparison x Value Mode Update</description>
-                            <bitOffset>24</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPM2</name>
-                    <description>PWM Comparison 2 Mode Register</description>
-                    <addressOffset>0x00000158</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CEN</name>
-                            <description>Comparison x Enable</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CTR</name>
-                            <description>Comparison x Trigger</description>
-                            <bitOffset>4</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CPR</name>
-                            <description>Comparison x Period</description>
-                            <bitOffset>8</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CPRCNT</name>
-                            <description>Comparison x Period Counter</description>
-                            <bitOffset>12</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CUPR</name>
-                            <description>Comparison x Update Period</description>
-                            <bitOffset>16</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CUPRCNT</name>
-                            <description>Comparison x Update Period Counter</description>
-                            <bitOffset>20</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPMUPD2</name>
-                    <description>PWM Comparison 2 Mode Update Register</description>
-                    <addressOffset>0x0000015C</addressOffset>
-                    <size>32</size>
-                    <access>write-only</access>
-                    <fields>
-                        <field>
-                            <name>CENUPD</name>
-                            <description>Comparison x Enable Update</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CTRUPD</name>
-                            <description>Comparison x Trigger Update</description>
-                            <bitOffset>4</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CPRUPD</name>
-                            <description>Comparison x Period Update</description>
-                            <bitOffset>8</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CUPRUPD</name>
-                            <description>Comparison x Update Period Update</description>
-                            <bitOffset>16</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPV3</name>
-                    <description>PWM Comparison 3 Value Register</description>
-                    <addressOffset>0x00000160</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CV</name>
-                            <description>Comparison x Value</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CVM</name>
-                            <description>Comparison x Value Mode</description>
-                            <bitOffset>24</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPVUPD3</name>
-                    <description>PWM Comparison 3 Value Update Register</description>
-                    <addressOffset>0x00000164</addressOffset>
-                    <size>32</size>
-                    <access>write-only</access>
-                    <fields>
-                        <field>
-                            <name>CVUPD</name>
-                            <description>Comparison x Value Update</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CVMUPD</name>
-                            <description>Comparison x Value Mode Update</description>
-                            <bitOffset>24</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPM3</name>
-                    <description>PWM Comparison 3 Mode Register</description>
-                    <addressOffset>0x00000168</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CEN</name>
-                            <description>Comparison x Enable</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CTR</name>
-                            <description>Comparison x Trigger</description>
-                            <bitOffset>4</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CPR</name>
-                            <description>Comparison x Period</description>
-                            <bitOffset>8</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CPRCNT</name>
-                            <description>Comparison x Period Counter</description>
-                            <bitOffset>12</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CUPR</name>
-                            <description>Comparison x Update Period</description>
-                            <bitOffset>16</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CUPRCNT</name>
-                            <description>Comparison x Update Period Counter</description>
-                            <bitOffset>20</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPMUPD3</name>
-                    <description>PWM Comparison 3 Mode Update Register</description>
-                    <addressOffset>0x0000016C</addressOffset>
-                    <size>32</size>
-                    <access>write-only</access>
-                    <fields>
-                        <field>
-                            <name>CENUPD</name>
-                            <description>Comparison x Enable Update</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CTRUPD</name>
-                            <description>Comparison x Trigger Update</description>
-                            <bitOffset>4</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CPRUPD</name>
-                            <description>Comparison x Period Update</description>
-                            <bitOffset>8</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CUPRUPD</name>
-                            <description>Comparison x Update Period Update</description>
-                            <bitOffset>16</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPV4</name>
-                    <description>PWM Comparison 4 Value Register</description>
-                    <addressOffset>0x00000170</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CV</name>
-                            <description>Comparison x Value</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CVM</name>
-                            <description>Comparison x Value Mode</description>
-                            <bitOffset>24</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPVUPD4</name>
-                    <description>PWM Comparison 4 Value Update Register</description>
-                    <addressOffset>0x00000174</addressOffset>
-                    <size>32</size>
-                    <access>write-only</access>
-                    <fields>
-                        <field>
-                            <name>CVUPD</name>
-                            <description>Comparison x Value Update</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CVMUPD</name>
-                            <description>Comparison x Value Mode Update</description>
-                            <bitOffset>24</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPM4</name>
-                    <description>PWM Comparison 4 Mode Register</description>
-                    <addressOffset>0x00000178</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CEN</name>
-                            <description>Comparison x Enable</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CTR</name>
-                            <description>Comparison x Trigger</description>
-                            <bitOffset>4</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CPR</name>
-                            <description>Comparison x Period</description>
-                            <bitOffset>8</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CPRCNT</name>
-                            <description>Comparison x Period Counter</description>
-                            <bitOffset>12</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CUPR</name>
-                            <description>Comparison x Update Period</description>
-                            <bitOffset>16</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CUPRCNT</name>
-                            <description>Comparison x Update Period Counter</description>
-                            <bitOffset>20</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPMUPD4</name>
-                    <description>PWM Comparison 4 Mode Update Register</description>
-                    <addressOffset>0x0000017C</addressOffset>
-                    <size>32</size>
-                    <access>write-only</access>
-                    <fields>
-                        <field>
-                            <name>CENUPD</name>
-                            <description>Comparison x Enable Update</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CTRUPD</name>
-                            <description>Comparison x Trigger Update</description>
-                            <bitOffset>4</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CPRUPD</name>
-                            <description>Comparison x Period Update</description>
-                            <bitOffset>8</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CUPRUPD</name>
-                            <description>Comparison x Update Period Update</description>
-                            <bitOffset>16</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPV5</name>
-                    <description>PWM Comparison 5 Value Register</description>
-                    <addressOffset>0x00000180</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CV</name>
-                            <description>Comparison x Value</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CVM</name>
-                            <description>Comparison x Value Mode</description>
-                            <bitOffset>24</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPVUPD5</name>
-                    <description>PWM Comparison 5 Value Update Register</description>
-                    <addressOffset>0x00000184</addressOffset>
-                    <size>32</size>
-                    <access>write-only</access>
-                    <fields>
-                        <field>
-                            <name>CVUPD</name>
-                            <description>Comparison x Value Update</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CVMUPD</name>
-                            <description>Comparison x Value Mode Update</description>
-                            <bitOffset>24</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPM5</name>
-                    <description>PWM Comparison 5 Mode Register</description>
-                    <addressOffset>0x00000188</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CEN</name>
-                            <description>Comparison x Enable</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CTR</name>
-                            <description>Comparison x Trigger</description>
-                            <bitOffset>4</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CPR</name>
-                            <description>Comparison x Period</description>
-                            <bitOffset>8</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CPRCNT</name>
-                            <description>Comparison x Period Counter</description>
-                            <bitOffset>12</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CUPR</name>
-                            <description>Comparison x Update Period</description>
-                            <bitOffset>16</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CUPRCNT</name>
-                            <description>Comparison x Update Period Counter</description>
-                            <bitOffset>20</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPMUPD5</name>
-                    <description>PWM Comparison 5 Mode Update Register</description>
-                    <addressOffset>0x0000018C</addressOffset>
-                    <size>32</size>
-                    <access>write-only</access>
-                    <fields>
-                        <field>
-                            <name>CENUPD</name>
-                            <description>Comparison x Enable Update</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CTRUPD</name>
-                            <description>Comparison x Trigger Update</description>
-                            <bitOffset>4</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CPRUPD</name>
-                            <description>Comparison x Period Update</description>
-                            <bitOffset>8</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CUPRUPD</name>
-                            <description>Comparison x Update Period Update</description>
-                            <bitOffset>16</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPV6</name>
-                    <description>PWM Comparison 6 Value Register</description>
-                    <addressOffset>0x00000190</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CV</name>
-                            <description>Comparison x Value</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CVM</name>
-                            <description>Comparison x Value Mode</description>
-                            <bitOffset>24</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPVUPD6</name>
-                    <description>PWM Comparison 6 Value Update Register</description>
-                    <addressOffset>0x00000194</addressOffset>
-                    <size>32</size>
-                    <access>write-only</access>
-                    <fields>
-                        <field>
-                            <name>CVUPD</name>
-                            <description>Comparison x Value Update</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CVMUPD</name>
-                            <description>Comparison x Value Mode Update</description>
-                            <bitOffset>24</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPM6</name>
-                    <description>PWM Comparison 6 Mode Register</description>
-                    <addressOffset>0x00000198</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CEN</name>
-                            <description>Comparison x Enable</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CTR</name>
-                            <description>Comparison x Trigger</description>
-                            <bitOffset>4</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CPR</name>
-                            <description>Comparison x Period</description>
-                            <bitOffset>8</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CPRCNT</name>
-                            <description>Comparison x Period Counter</description>
-                            <bitOffset>12</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CUPR</name>
-                            <description>Comparison x Update Period</description>
-                            <bitOffset>16</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CUPRCNT</name>
-                            <description>Comparison x Update Period Counter</description>
-                            <bitOffset>20</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPMUPD6</name>
-                    <description>PWM Comparison 6 Mode Update Register</description>
-                    <addressOffset>0x0000019C</addressOffset>
-                    <size>32</size>
-                    <access>write-only</access>
-                    <fields>
-                        <field>
-                            <name>CENUPD</name>
-                            <description>Comparison x Enable Update</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CTRUPD</name>
-                            <description>Comparison x Trigger Update</description>
-                            <bitOffset>4</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CPRUPD</name>
-                            <description>Comparison x Period Update</description>
-                            <bitOffset>8</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CUPRUPD</name>
-                            <description>Comparison x Update Period Update</description>
-                            <bitOffset>16</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPV7</name>
-                    <description>PWM Comparison 7 Value Register</description>
-                    <addressOffset>0x000001A0</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CV</name>
-                            <description>Comparison x Value</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CVM</name>
-                            <description>Comparison x Value Mode</description>
-                            <bitOffset>24</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPVUPD7</name>
-                    <description>PWM Comparison 7 Value Update Register</description>
-                    <addressOffset>0x000001A4</addressOffset>
-                    <size>32</size>
-                    <access>write-only</access>
-                    <fields>
-                        <field>
-                            <name>CVUPD</name>
-                            <description>Comparison x Value Update</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CVMUPD</name>
-                            <description>Comparison x Value Mode Update</description>
-                            <bitOffset>24</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPM7</name>
-                    <description>PWM Comparison 7 Mode Register</description>
-                    <addressOffset>0x000001A8</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CEN</name>
-                            <description>Comparison x Enable</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CTR</name>
-                            <description>Comparison x Trigger</description>
-                            <bitOffset>4</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CPR</name>
-                            <description>Comparison x Period</description>
-                            <bitOffset>8</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CPRCNT</name>
-                            <description>Comparison x Period Counter</description>
-                            <bitOffset>12</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CUPR</name>
-                            <description>Comparison x Update Period</description>
-                            <bitOffset>16</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CUPRCNT</name>
-                            <description>Comparison x Update Period Counter</description>
-                            <bitOffset>20</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMPMUPD7</name>
-                    <description>PWM Comparison 7 Mode Update Register</description>
-                    <addressOffset>0x000001AC</addressOffset>
-                    <size>32</size>
-                    <access>write-only</access>
-                    <fields>
-                        <field>
-                            <name>CENUPD</name>
-                            <description>Comparison x Enable Update</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CTRUPD</name>
-                            <description>Comparison x Trigger Update</description>
-                            <bitOffset>4</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CPRUPD</name>
-                            <description>Comparison x Period Update</description>
-                            <bitOffset>8</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>CUPRUPD</name>
-                            <description>Comparison x Update Period Update</description>
-                            <bitOffset>16</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMR0</name>
-                    <description>PWM Channel Mode Register (ch_num = 0)</description>
+                    <register>
+                        <name>CMPV</name>
+                        <description>PWM Comparison Value Register</description>
+                        <addressOffset>0x00000000</addressOffset>
+                        <size>32</size>
+                        <access>read-write</access>
+                        <resetValue>0x00000000</resetValue>
+                        <fields>
+                            <field>
+                                <name>CV</name>
+                                <description>Comparison x Value</description>
+                                <bitOffset>0</bitOffset>
+                                <bitWidth>24</bitWidth>
+                                <access>read-write</access>
+                            </field>
+                            <field>
+                                <name>CVM</name>
+                                <description>Comparison x Value Mode</description>
+                                <bitOffset>24</bitOffset>
+                                <bitWidth>1</bitWidth>
+                                <access>read-write</access>
+                            </field>
+                        </fields>
+                    </register>
+                    <register>
+                        <name>CMPVUPD</name>
+                        <description>PWM Comparison Value Update Register</description>
+                        <addressOffset>0x00000004</addressOffset>
+                        <size>32</size>
+                        <access>write-only</access>
+                        <fields>
+                            <field>
+                                <name>CVUPD</name>
+                                <description>Comparison x Value Update</description>
+                                <bitOffset>0</bitOffset>
+                                <bitWidth>24</bitWidth>
+                                <access>write-only</access>
+                            </field>
+                            <field>
+                                <name>CVMUPD</name>
+                                <description>Comparison x Value Mode Update</description>
+                                <bitOffset>24</bitOffset>
+                                <bitWidth>1</bitWidth>
+                                <access>write-only</access>
+                            </field>
+                        </fields>
+                    </register>
+                    <register>
+                        <name>CMPM</name>
+                        <description>PWM Comparison Mode Register</description>
+                        <addressOffset>0x00000008</addressOffset>
+                        <size>32</size>
+                        <access>read-write</access>
+                        <resetValue>0x00000000</resetValue>
+                        <fields>
+                            <field>
+                                <name>CEN</name>
+                                <description>Comparison x Enable</description>
+                                <bitOffset>0</bitOffset>
+                                <bitWidth>1</bitWidth>
+                                <access>read-write</access>
+                            </field>
+                            <field>
+                                <name>CTR</name>
+                                <description>Comparison x Trigger</description>
+                                <bitOffset>4</bitOffset>
+                                <bitWidth>4</bitWidth>
+                                <access>read-write</access>
+                            </field>
+                            <field>
+                                <name>CPR</name>
+                                <description>Comparison x Period</description>
+                                <bitOffset>8</bitOffset>
+                                <bitWidth>4</bitWidth>
+                                <access>read-write</access>
+                            </field>
+                            <field>
+                                <name>CPRCNT</name>
+                                <description>Comparison x Period Counter</description>
+                                <bitOffset>12</bitOffset>
+                                <bitWidth>4</bitWidth>
+                                <access>read-write</access>
+                            </field>
+                            <field>
+                                <name>CUPR</name>
+                                <description>Comparison x Update Period</description>
+                                <bitOffset>16</bitOffset>
+                                <bitWidth>4</bitWidth>
+                                <access>read-write</access>
+                            </field>
+                            <field>
+                                <name>CUPRCNT</name>
+                                <description>Comparison x Update Period Counter</description>
+                                <bitOffset>20</bitOffset>
+                                <bitWidth>4</bitWidth>
+                                <access>read-write</access>
+                            </field>
+                        </fields>
+                    </register>
+                    <register>
+                        <name>CMPMUPD</name>
+                        <description>PWM Comparison Mode Update Register</description>
+                        <addressOffset>0x0000000C</addressOffset>
+                        <size>32</size>
+                        <access>write-only</access>
+                        <fields>
+                            <field>
+                                <name>CENUPD</name>
+                                <description>Comparison x Enable Update</description>
+                                <bitOffset>0</bitOffset>
+                                <bitWidth>1</bitWidth>
+                                <access>write-only</access>
+                            </field>
+                            <field>
+                                <name>CTRUPD</name>
+                                <description>Comparison x Trigger Update</description>
+                                <bitOffset>4</bitOffset>
+                                <bitWidth>4</bitWidth>
+                                <access>write-only</access>
+                            </field>
+                            <field>
+                                <name>CPRUPD</name>
+                                <description>Comparison x Period Update</description>
+                                <bitOffset>8</bitOffset>
+                                <bitWidth>4</bitWidth>
+                                <access>write-only</access>
+                            </field>
+                            <field>
+                                <name>CUPRUPD</name>
+                                <description>Comparison x Update Period Update</description>
+                                <bitOffset>16</bitOffset>
+                                <bitWidth>4</bitWidth>
+                                <access>write-only</access>
+                            </field>
+                        </fields>
+                    </register>
+                </cluster>
+                <cluster>
+                    <dim>4</dim>
+                    <dimIncrement>0x20</dimIncrement>
+                    <dimIndex>0-4</dimIndex>
+                    <name>CH[%s]</name>
+                    <description>Timer channel registers</description>
+                    <headerStructName>pwm_channel</headerStructName>
                     <addressOffset>0x00000200</addressOffset>
-                    <size>32</size>
                     <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CPRE</name>
-                            <description>Channel Pre-scaler</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                            <enumeratedValues>
-                                <enumeratedValue>
-                                    <name>MCK</name>
-                                    <description>Peripheral clock</description>
-                                    <value>0x0</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_2</name>
-                                    <description>Peripheral clock/2</description>
-                                    <value>0x1</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_4</name>
-                                    <description>Peripheral clock/4</description>
-                                    <value>0x2</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_8</name>
-                                    <description>Peripheral clock/8</description>
-                                    <value>0x3</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_16</name>
-                                    <description>Peripheral clock/16</description>
-                                    <value>0x4</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_32</name>
-                                    <description>Peripheral clock/32</description>
-                                    <value>0x5</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_64</name>
-                                    <description>Peripheral clock/64</description>
-                                    <value>0x6</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_128</name>
-                                    <description>Peripheral clock/128</description>
-                                    <value>0x7</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_256</name>
-                                    <description>Peripheral clock/256</description>
-                                    <value>0x8</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_512</name>
-                                    <description>Peripheral clock/512</description>
-                                    <value>0x9</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_1024</name>
-                                    <description>Peripheral clock/1024</description>
-                                    <value>0xA</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>CLKA</name>
-                                    <description>Clock A</description>
-                                    <value>0xB</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>CLKB</name>
-                                    <description>Clock B</description>
-                                    <value>0xC</value>
-                                </enumeratedValue>
-                            </enumeratedValues>
-                        </field>
-                        <field>
-                            <name>CALG</name>
-                            <description>Channel Alignment</description>
-                            <bitOffset>8</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CPOL</name>
-                            <description>Channel Polarity</description>
-                            <bitOffset>9</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CES</name>
-                            <description>Counter Event Selection</description>
-                            <bitOffset>10</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>DTE</name>
-                            <description>Dead-Time Generator Enable</description>
-                            <bitOffset>16</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>DTHI</name>
-                            <description>Dead-Time PWMHx Output Inverted</description>
-                            <bitOffset>17</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>DTLI</name>
-                            <description>Dead-Time PWMLx Output Inverted</description>
-                            <bitOffset>18</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CDTY0</name>
-                    <description>PWM Channel Duty Cycle Register (ch_num = 0)</description>
-                    <addressOffset>0x00000204</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CDTY</name>
-                            <description>Channel Duty-Cycle</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CDTYUPD0</name>
-                    <description>PWM Channel Duty Cycle Update Register (ch_num = 0)</description>
-                    <addressOffset>0x00000208</addressOffset>
-                    <size>32</size>
-                    <access>write-only</access>
-                    <fields>
-                        <field>
-                            <name>CDTYUPD</name>
-                            <description>Channel Duty-Cycle Update</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CPRD0</name>
-                    <description>PWM Channel Period Register (ch_num = 0)</description>
-                    <addressOffset>0x0000020C</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CPRD</name>
-                            <description>Channel Period</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CPRDUPD0</name>
-                    <description>PWM Channel Period Update Register (ch_num = 0)</description>
-                    <addressOffset>0x00000210</addressOffset>
-                    <size>32</size>
-                    <access>write-only</access>
-                    <fields>
-                        <field>
-                            <name>CPRDUPD</name>
-                            <description>Channel Period Update</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CCNT0</name>
-                    <description>PWM Channel Counter Register (ch_num = 0)</description>
-                    <addressOffset>0x00000214</addressOffset>
-                    <size>32</size>
-                    <access>read-only</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CNT</name>
-                            <description>Channel Counter Register</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>read-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>DT0</name>
-                    <description>PWM Channel Dead Time Register (ch_num = 0)</description>
-                    <addressOffset>0x00000218</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>DTH</name>
-                            <description>Dead-Time Value for PWMHx Output</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>16</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>DTL</name>
-                            <description>Dead-Time Value for PWMLx Output</description>
-                            <bitOffset>16</bitOffset>
-                            <bitWidth>16</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>DTUPD0</name>
-                    <description>PWM Channel Dead Time Update Register (ch_num = 0)</description>
-                    <addressOffset>0x0000021C</addressOffset>
-                    <size>32</size>
-                    <access>write-only</access>
-                    <fields>
-                        <field>
-                            <name>DTHUPD</name>
-                            <description>Dead-Time Value Update for PWMHx Output</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>16</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>DTLUPD</name>
-                            <description>Dead-Time Value Update for PWMLx Output</description>
-                            <bitOffset>16</bitOffset>
-                            <bitWidth>16</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMR1</name>
-                    <description>PWM Channel Mode Register (ch_num = 1)</description>
-                    <addressOffset>0x00000220</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CPRE</name>
-                            <description>Channel Pre-scaler</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                            <enumeratedValues>
-                                <enumeratedValue>
-                                    <name>MCK</name>
-                                    <description>Peripheral clock</description>
-                                    <value>0x0</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_2</name>
-                                    <description>Peripheral clock/2</description>
-                                    <value>0x1</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_4</name>
-                                    <description>Peripheral clock/4</description>
-                                    <value>0x2</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_8</name>
-                                    <description>Peripheral clock/8</description>
-                                    <value>0x3</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_16</name>
-                                    <description>Peripheral clock/16</description>
-                                    <value>0x4</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_32</name>
-                                    <description>Peripheral clock/32</description>
-                                    <value>0x5</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_64</name>
-                                    <description>Peripheral clock/64</description>
-                                    <value>0x6</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_128</name>
-                                    <description>Peripheral clock/128</description>
-                                    <value>0x7</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_256</name>
-                                    <description>Peripheral clock/256</description>
-                                    <value>0x8</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_512</name>
-                                    <description>Peripheral clock/512</description>
-                                    <value>0x9</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_1024</name>
-                                    <description>Peripheral clock/1024</description>
-                                    <value>0xA</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>CLKA</name>
-                                    <description>Clock A</description>
-                                    <value>0xB</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>CLKB</name>
-                                    <description>Clock B</description>
-                                    <value>0xC</value>
-                                </enumeratedValue>
-                            </enumeratedValues>
-                        </field>
-                        <field>
-                            <name>CALG</name>
-                            <description>Channel Alignment</description>
-                            <bitOffset>8</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CPOL</name>
-                            <description>Channel Polarity</description>
-                            <bitOffset>9</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CES</name>
-                            <description>Counter Event Selection</description>
-                            <bitOffset>10</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>DTE</name>
-                            <description>Dead-Time Generator Enable</description>
-                            <bitOffset>16</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>DTHI</name>
-                            <description>Dead-Time PWMHx Output Inverted</description>
-                            <bitOffset>17</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>DTLI</name>
-                            <description>Dead-Time PWMLx Output Inverted</description>
-                            <bitOffset>18</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CDTY1</name>
-                    <description>PWM Channel Duty Cycle Register (ch_num = 1)</description>
-                    <addressOffset>0x00000224</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CDTY</name>
-                            <description>Channel Duty-Cycle</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CDTYUPD1</name>
-                    <description>PWM Channel Duty Cycle Update Register (ch_num = 1)</description>
-                    <addressOffset>0x00000228</addressOffset>
-                    <size>32</size>
-                    <access>write-only</access>
-                    <fields>
-                        <field>
-                            <name>CDTYUPD</name>
-                            <description>Channel Duty-Cycle Update</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CPRD1</name>
-                    <description>PWM Channel Period Register (ch_num = 1)</description>
-                    <addressOffset>0x0000022C</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CPRD</name>
-                            <description>Channel Period</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CPRDUPD1</name>
-                    <description>PWM Channel Period Update Register (ch_num = 1)</description>
-                    <addressOffset>0x00000230</addressOffset>
-                    <size>32</size>
-                    <access>write-only</access>
-                    <fields>
-                        <field>
-                            <name>CPRDUPD</name>
-                            <description>Channel Period Update</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CCNT1</name>
-                    <description>PWM Channel Counter Register (ch_num = 1)</description>
-                    <addressOffset>0x00000234</addressOffset>
-                    <size>32</size>
-                    <access>read-only</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CNT</name>
-                            <description>Channel Counter Register</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>read-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>DT1</name>
-                    <description>PWM Channel Dead Time Register (ch_num = 1)</description>
-                    <addressOffset>0x00000238</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>DTH</name>
-                            <description>Dead-Time Value for PWMHx Output</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>16</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>DTL</name>
-                            <description>Dead-Time Value for PWMLx Output</description>
-                            <bitOffset>16</bitOffset>
-                            <bitWidth>16</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>DTUPD1</name>
-                    <description>PWM Channel Dead Time Update Register (ch_num = 1)</description>
-                    <addressOffset>0x0000023C</addressOffset>
-                    <size>32</size>
-                    <access>write-only</access>
-                    <fields>
-                        <field>
-                            <name>DTHUPD</name>
-                            <description>Dead-Time Value Update for PWMHx Output</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>16</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>DTLUPD</name>
-                            <description>Dead-Time Value Update for PWMLx Output</description>
-                            <bitOffset>16</bitOffset>
-                            <bitWidth>16</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMR2</name>
-                    <description>PWM Channel Mode Register (ch_num = 2)</description>
-                    <addressOffset>0x00000240</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CPRE</name>
-                            <description>Channel Pre-scaler</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                            <enumeratedValues>
-                                <enumeratedValue>
-                                    <name>MCK</name>
-                                    <description>Peripheral clock</description>
-                                    <value>0x0</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_2</name>
-                                    <description>Peripheral clock/2</description>
-                                    <value>0x1</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_4</name>
-                                    <description>Peripheral clock/4</description>
-                                    <value>0x2</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_8</name>
-                                    <description>Peripheral clock/8</description>
-                                    <value>0x3</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_16</name>
-                                    <description>Peripheral clock/16</description>
-                                    <value>0x4</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_32</name>
-                                    <description>Peripheral clock/32</description>
-                                    <value>0x5</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_64</name>
-                                    <description>Peripheral clock/64</description>
-                                    <value>0x6</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_128</name>
-                                    <description>Peripheral clock/128</description>
-                                    <value>0x7</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_256</name>
-                                    <description>Peripheral clock/256</description>
-                                    <value>0x8</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_512</name>
-                                    <description>Peripheral clock/512</description>
-                                    <value>0x9</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_1024</name>
-                                    <description>Peripheral clock/1024</description>
-                                    <value>0xA</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>CLKA</name>
-                                    <description>Clock A</description>
-                                    <value>0xB</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>CLKB</name>
-                                    <description>Clock B</description>
-                                    <value>0xC</value>
-                                </enumeratedValue>
-                            </enumeratedValues>
-                        </field>
-                        <field>
-                            <name>CALG</name>
-                            <description>Channel Alignment</description>
-                            <bitOffset>8</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CPOL</name>
-                            <description>Channel Polarity</description>
-                            <bitOffset>9</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CES</name>
-                            <description>Counter Event Selection</description>
-                            <bitOffset>10</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>DTE</name>
-                            <description>Dead-Time Generator Enable</description>
-                            <bitOffset>16</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>DTHI</name>
-                            <description>Dead-Time PWMHx Output Inverted</description>
-                            <bitOffset>17</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>DTLI</name>
-                            <description>Dead-Time PWMLx Output Inverted</description>
-                            <bitOffset>18</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CDTY2</name>
-                    <description>PWM Channel Duty Cycle Register (ch_num = 2)</description>
-                    <addressOffset>0x00000244</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CDTY</name>
-                            <description>Channel Duty-Cycle</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CDTYUPD2</name>
-                    <description>PWM Channel Duty Cycle Update Register (ch_num = 2)</description>
-                    <addressOffset>0x00000248</addressOffset>
-                    <size>32</size>
-                    <access>write-only</access>
-                    <fields>
-                        <field>
-                            <name>CDTYUPD</name>
-                            <description>Channel Duty-Cycle Update</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CPRD2</name>
-                    <description>PWM Channel Period Register (ch_num = 2)</description>
-                    <addressOffset>0x0000024C</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CPRD</name>
-                            <description>Channel Period</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CPRDUPD2</name>
-                    <description>PWM Channel Period Update Register (ch_num = 2)</description>
-                    <addressOffset>0x00000250</addressOffset>
-                    <size>32</size>
-                    <access>write-only</access>
-                    <fields>
-                        <field>
-                            <name>CPRDUPD</name>
-                            <description>Channel Period Update</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CCNT2</name>
-                    <description>PWM Channel Counter Register (ch_num = 2)</description>
-                    <addressOffset>0x00000254</addressOffset>
-                    <size>32</size>
-                    <access>read-only</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CNT</name>
-                            <description>Channel Counter Register</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>read-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>DT2</name>
-                    <description>PWM Channel Dead Time Register (ch_num = 2)</description>
-                    <addressOffset>0x00000258</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>DTH</name>
-                            <description>Dead-Time Value for PWMHx Output</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>16</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>DTL</name>
-                            <description>Dead-Time Value for PWMLx Output</description>
-                            <bitOffset>16</bitOffset>
-                            <bitWidth>16</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>DTUPD2</name>
-                    <description>PWM Channel Dead Time Update Register (ch_num = 2)</description>
-                    <addressOffset>0x0000025C</addressOffset>
-                    <size>32</size>
-                    <access>write-only</access>
-                    <fields>
-                        <field>
-                            <name>DTHUPD</name>
-                            <description>Dead-Time Value Update for PWMHx Output</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>16</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>DTLUPD</name>
-                            <description>Dead-Time Value Update for PWMLx Output</description>
-                            <bitOffset>16</bitOffset>
-                            <bitWidth>16</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CMR3</name>
-                    <description>PWM Channel Mode Register (ch_num = 3)</description>
-                    <addressOffset>0x00000260</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CPRE</name>
-                            <description>Channel Pre-scaler</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>4</bitWidth>
-                            <access>read-write</access>
-                            <enumeratedValues>
-                                <enumeratedValue>
-                                    <name>MCK</name>
-                                    <description>Peripheral clock</description>
-                                    <value>0x0</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_2</name>
-                                    <description>Peripheral clock/2</description>
-                                    <value>0x1</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_4</name>
-                                    <description>Peripheral clock/4</description>
-                                    <value>0x2</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_8</name>
-                                    <description>Peripheral clock/8</description>
-                                    <value>0x3</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_16</name>
-                                    <description>Peripheral clock/16</description>
-                                    <value>0x4</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_32</name>
-                                    <description>Peripheral clock/32</description>
-                                    <value>0x5</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_64</name>
-                                    <description>Peripheral clock/64</description>
-                                    <value>0x6</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_128</name>
-                                    <description>Peripheral clock/128</description>
-                                    <value>0x7</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_256</name>
-                                    <description>Peripheral clock/256</description>
-                                    <value>0x8</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_512</name>
-                                    <description>Peripheral clock/512</description>
-                                    <value>0x9</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>MCK_DIV_1024</name>
-                                    <description>Peripheral clock/1024</description>
-                                    <value>0xA</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>CLKA</name>
-                                    <description>Clock A</description>
-                                    <value>0xB</value>
-                                </enumeratedValue>
-                                <enumeratedValue>
-                                    <name>CLKB</name>
-                                    <description>Clock B</description>
-                                    <value>0xC</value>
-                                </enumeratedValue>
-                            </enumeratedValues>
-                        </field>
-                        <field>
-                            <name>CALG</name>
-                            <description>Channel Alignment</description>
-                            <bitOffset>8</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CPOL</name>
-                            <description>Channel Polarity</description>
-                            <bitOffset>9</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>CES</name>
-                            <description>Counter Event Selection</description>
-                            <bitOffset>10</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>DTE</name>
-                            <description>Dead-Time Generator Enable</description>
-                            <bitOffset>16</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>DTHI</name>
-                            <description>Dead-Time PWMHx Output Inverted</description>
-                            <bitOffset>17</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>DTLI</name>
-                            <description>Dead-Time PWMLx Output Inverted</description>
-                            <bitOffset>18</bitOffset>
-                            <bitWidth>1</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CDTY3</name>
-                    <description>PWM Channel Duty Cycle Register (ch_num = 3)</description>
-                    <addressOffset>0x00000264</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CDTY</name>
-                            <description>Channel Duty-Cycle</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CDTYUPD3</name>
-                    <description>PWM Channel Duty Cycle Update Register (ch_num = 3)</description>
-                    <addressOffset>0x00000268</addressOffset>
-                    <size>32</size>
-                    <access>write-only</access>
-                    <fields>
-                        <field>
-                            <name>CDTYUPD</name>
-                            <description>Channel Duty-Cycle Update</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CPRD3</name>
-                    <description>PWM Channel Period Register (ch_num = 3)</description>
-                    <addressOffset>0x0000026C</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CPRD</name>
-                            <description>Channel Period</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CPRDUPD3</name>
-                    <description>PWM Channel Period Update Register (ch_num = 3)</description>
-                    <addressOffset>0x00000270</addressOffset>
-                    <size>32</size>
-                    <access>write-only</access>
-                    <fields>
-                        <field>
-                            <name>CPRDUPD</name>
-                            <description>Channel Period Update</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>CCNT3</name>
-                    <description>PWM Channel Counter Register (ch_num = 3)</description>
-                    <addressOffset>0x00000274</addressOffset>
-                    <size>32</size>
-                    <access>read-only</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>CNT</name>
-                            <description>Channel Counter Register</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>24</bitWidth>
-                            <access>read-only</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>DT3</name>
-                    <description>PWM Channel Dead Time Register (ch_num = 3)</description>
-                    <addressOffset>0x00000278</addressOffset>
-                    <size>32</size>
-                    <access>read-write</access>
-                    <resetValue>0x00000000</resetValue>
-                    <fields>
-                        <field>
-                            <name>DTH</name>
-                            <description>Dead-Time Value for PWMHx Output</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>16</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                        <field>
-                            <name>DTL</name>
-                            <description>Dead-Time Value for PWMLx Output</description>
-                            <bitOffset>16</bitOffset>
-                            <bitWidth>16</bitWidth>
-                            <access>read-write</access>
-                        </field>
-                    </fields>
-                </register>
-                <register>
-                    <name>DTUPD3</name>
-                    <description>PWM Channel Dead Time Update Register (ch_num = 3)</description>
-                    <addressOffset>0x0000027C</addressOffset>
-                    <size>32</size>
-                    <access>write-only</access>
-                    <fields>
-                        <field>
-                            <name>DTHUPD</name>
-                            <description>Dead-Time Value Update for PWMHx Output</description>
-                            <bitOffset>0</bitOffset>
-                            <bitWidth>16</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                        <field>
-                            <name>DTLUPD</name>
-                            <description>Dead-Time Value Update for PWMLx Output</description>
-                            <bitOffset>16</bitOffset>
-                            <bitWidth>16</bitWidth>
-                            <access>write-only</access>
-                        </field>
-                    </fields>
-                </register>
+                    <register>
+                        <name>CMR</name>
+                        <description>PWM Channel Mode Register</description>
+                        <addressOffset>0x00000000</addressOffset>
+                        <size>32</size>
+                        <access>read-write</access>
+                        <resetValue>0x00000000</resetValue>
+                        <fields>
+                            <field>
+                                <name>CPRE</name>
+                                <description>Channel Pre-scaler</description>
+                                <bitOffset>0</bitOffset>
+                                <bitWidth>4</bitWidth>
+                                <access>read-write</access>
+                                <enumeratedValues>
+                                    <enumeratedValue>
+                                        <name>MCK</name>
+                                        <description>Peripheral clock</description>
+                                        <value>0x0</value>
+                                    </enumeratedValue>
+                                    <enumeratedValue>
+                                        <name>MCK_DIV_2</name>
+                                        <description>Peripheral clock/2</description>
+                                        <value>0x1</value>
+                                    </enumeratedValue>
+                                    <enumeratedValue>
+                                        <name>MCK_DIV_4</name>
+                                        <description>Peripheral clock/4</description>
+                                        <value>0x2</value>
+                                    </enumeratedValue>
+                                    <enumeratedValue>
+                                        <name>MCK_DIV_8</name>
+                                        <description>Peripheral clock/8</description>
+                                        <value>0x3</value>
+                                    </enumeratedValue>
+                                    <enumeratedValue>
+                                        <name>MCK_DIV_16</name>
+                                        <description>Peripheral clock/16</description>
+                                        <value>0x4</value>
+                                    </enumeratedValue>
+                                    <enumeratedValue>
+                                        <name>MCK_DIV_32</name>
+                                        <description>Peripheral clock/32</description>
+                                        <value>0x5</value>
+                                    </enumeratedValue>
+                                    <enumeratedValue>
+                                        <name>MCK_DIV_64</name>
+                                        <description>Peripheral clock/64</description>
+                                        <value>0x6</value>
+                                    </enumeratedValue>
+                                    <enumeratedValue>
+                                        <name>MCK_DIV_128</name>
+                                        <description>Peripheral clock/128</description>
+                                        <value>0x7</value>
+                                    </enumeratedValue>
+                                    <enumeratedValue>
+                                        <name>MCK_DIV_256</name>
+                                        <description>Peripheral clock/256</description>
+                                        <value>0x8</value>
+                                    </enumeratedValue>
+                                    <enumeratedValue>
+                                        <name>MCK_DIV_512</name>
+                                        <description>Peripheral clock/512</description>
+                                        <value>0x9</value>
+                                    </enumeratedValue>
+                                    <enumeratedValue>
+                                        <name>MCK_DIV_1024</name>
+                                        <description>Peripheral clock/1024</description>
+                                        <value>0xA</value>
+                                    </enumeratedValue>
+                                    <enumeratedValue>
+                                        <name>CLKA</name>
+                                        <description>Clock A</description>
+                                        <value>0xB</value>
+                                    </enumeratedValue>
+                                    <enumeratedValue>
+                                        <name>CLKB</name>
+                                        <description>Clock B</description>
+                                        <value>0xC</value>
+                                    </enumeratedValue>
+                                </enumeratedValues>
+                            </field>
+                            <field>
+                                <name>CALG</name>
+                                <description>Channel Alignment</description>
+                                <bitOffset>8</bitOffset>
+                                <bitWidth>1</bitWidth>
+                                <access>read-write</access>
+                            </field>
+                            <field>
+                                <name>CPOL</name>
+                                <description>Channel Polarity</description>
+                                <bitOffset>9</bitOffset>
+                                <bitWidth>1</bitWidth>
+                                <access>read-write</access>
+                            </field>
+                            <field>
+                                <name>CES</name>
+                                <description>Counter Event Selection</description>
+                                <bitOffset>10</bitOffset>
+                                <bitWidth>1</bitWidth>
+                                <access>read-write</access>
+                            </field>
+                            <field>
+                                <name>DTE</name>
+                                <description>Dead-Time Generator Enable</description>
+                                <bitOffset>16</bitOffset>
+                                <bitWidth>1</bitWidth>
+                                <access>read-write</access>
+                            </field>
+                            <field>
+                                <name>DTHI</name>
+                                <description>Dead-Time PWMHx Output Inverted</description>
+                                <bitOffset>17</bitOffset>
+                                <bitWidth>1</bitWidth>
+                                <access>read-write</access>
+                            </field>
+                            <field>
+                                <name>DTLI</name>
+                                <description>Dead-Time PWMLx Output Inverted</description>
+                                <bitOffset>18</bitOffset>
+                                <bitWidth>1</bitWidth>
+                                <access>read-write</access>
+                            </field>
+                        </fields>
+                    </register>
+                    <register>
+                        <name>CDTY</name>
+                        <description>PWM Channel Duty Cycle Register</description>
+                        <addressOffset>0x00000004</addressOffset>
+                        <size>32</size>
+                        <access>read-write</access>
+                        <resetValue>0x00000000</resetValue>
+                        <fields>
+                            <field>
+                                <name>CDTY</name>
+                                <description>Channel Duty-Cycle</description>
+                                <bitOffset>0</bitOffset>
+                                <bitWidth>24</bitWidth>
+                                <access>read-write</access>
+                            </field>
+                        </fields>
+                    </register>
+                    <register>
+                        <name>CDTYUPD</name>
+                        <description>PWM Channel Duty Cycle Update Register</description>
+                        <addressOffset>0x00000008</addressOffset>
+                        <size>32</size>
+                        <access>write-only</access>
+                        <fields>
+                            <field>
+                                <name>CDTYUPD</name>
+                                <description>Channel Duty-Cycle Update</description>
+                                <bitOffset>0</bitOffset>
+                                <bitWidth>24</bitWidth>
+                                <access>write-only</access>
+                            </field>
+                        </fields>
+                    </register>
+                    <register>
+                        <name>CPRD</name>
+                        <description>PWM Channel Period Register</description>
+                        <addressOffset>0x0000000C</addressOffset>
+                        <size>32</size>
+                        <access>read-write</access>
+                        <resetValue>0x00000000</resetValue>
+                        <fields>
+                            <field>
+                                <name>CPRD</name>
+                                <description>Channel Period</description>
+                                <bitOffset>0</bitOffset>
+                                <bitWidth>24</bitWidth>
+                                <access>read-write</access>
+                            </field>
+                        </fields>
+                    </register>
+                    <register>
+                        <name>CPRDUPD</name>
+                        <description>PWM Channel Period Update Register</description>
+                        <addressOffset>0x00000010</addressOffset>
+                        <size>32</size>
+                        <access>write-only</access>
+                        <fields>
+                            <field>
+                                <name>CPRDUPD</name>
+                                <description>Channel Period Update</description>
+                                <bitOffset>0</bitOffset>
+                                <bitWidth>24</bitWidth>
+                                <access>write-only</access>
+                            </field>
+                        </fields>
+                    </register>
+                    <register>
+                        <name>CCNT</name>
+                        <description>PWM Channel Counter Register</description>
+                        <addressOffset>0x00000014</addressOffset>
+                        <size>32</size>
+                        <access>read-only</access>
+                        <resetValue>0x00000000</resetValue>
+                        <fields>
+                            <field>
+                                <name>CNT</name>
+                                <description>Channel Counter Register</description>
+                                <bitOffset>0</bitOffset>
+                                <bitWidth>24</bitWidth>
+                                <access>read-only</access>
+                            </field>
+                        </fields>
+                    </register>
+                    <register>
+                        <name>DT</name>
+                        <description>PWM Channel Dead Time Register</description>
+                        <addressOffset>0x00000018</addressOffset>
+                        <size>32</size>
+                        <access>read-write</access>
+                        <resetValue>0x00000000</resetValue>
+                        <fields>
+                            <field>
+                                <name>DTH</name>
+                                <description>Dead-Time Value for PWMHx Output</description>
+                                <bitOffset>0</bitOffset>
+                                <bitWidth>16</bitWidth>
+                                <access>read-write</access>
+                            </field>
+                            <field>
+                                <name>DTL</name>
+                                <description>Dead-Time Value for PWMLx Output</description>
+                                <bitOffset>16</bitOffset>
+                                <bitWidth>16</bitWidth>
+                                <access>read-write</access>
+                            </field>
+                        </fields>
+                    </register>
+                    <register>
+                        <name>DTUPD</name>
+                        <description>PWM Channel Dead Time Update Register</description>
+                        <addressOffset>0x0000001C</addressOffset>
+                        <size>32</size>
+                        <access>write-only</access>
+                        <fields>
+                            <field>
+                                <name>DTHUPD</name>
+                                <description>Dead-Time Value Update for PWMHx Output</description>
+                                <bitOffset>0</bitOffset>
+                                <bitWidth>16</bitWidth>
+                                <access>write-only</access>
+                            </field>
+                            <field>
+                                <name>DTLUPD</name>
+                                <description>Dead-Time Value Update for PWMLx Output</description>
+                                <bitOffset>16</bitOffset>
+                                <bitWidth>16</bitWidth>
+                                <access>write-only</access>
+                            </field>
+                        </fields>
+                    </register>
+                </cluster>
                 <register>
                     <name>TPR</name>
                     <description>Transmit Pointer Register</description>
