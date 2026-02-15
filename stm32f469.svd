@@ -59063,616 +59063,320 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
             </field>
           </fields>
         </register>
-        <register>
-          <name>L1CR</name>
-          <displayName>L1CR</displayName>
-          <description>Layerx Control Register</description>
-          <addressOffset>0x84</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>CLUTEN</name>
-              <description>Color Look-Up Table Enable</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COLKEN</name>
-              <description>Color Keying Enable</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>LEN</name>
-              <description>Layer Enable</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>L1WHPCR</name>
-          <displayName>L1WHPCR</displayName>
-          <description>Layerx Window Horizontal Position
-          Configuration Register</description>
-          <addressOffset>0x88</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>WHSPPOS</name>
-              <description>Window Horizontal Stop
-              Position</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>12</bitWidth>
-            </field>
-            <field>
-              <name>WHSTPOS</name>
-              <description>Window Horizontal Start
-              Position</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>12</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>L1WVPCR</name>
-          <displayName>L1WVPCR</displayName>
-          <description>Layerx Window Vertical Position
-          Configuration Register</description>
-          <addressOffset>0x8C</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>WVSPPOS</name>
-              <description>Window Vertical Stop
-              Position</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>11</bitWidth>
-            </field>
-            <field>
-              <name>WVSTPOS</name>
-              <description>Window Vertical Start
-              Position</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>11</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>L1CKCR</name>
-          <displayName>L1CKCR</displayName>
-          <description>Layerx Color Keying Configuration
-          Register</description>
-          <addressOffset>0x90</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>CKRED</name>
-              <description>Color Key Red value</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>CKGREEN</name>
-              <description>Color Key Green value</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>CKBLUE</name>
-              <description>Color Key Blue value</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>L1PFCR</name>
-          <displayName>L1PFCR</displayName>
-          <description>Layerx Pixel Format Configuration
-          Register</description>
-          <addressOffset>0x94</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PF</name>
-              <description>Pixel Format</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>L1CACR</name>
-          <displayName>L1CACR</displayName>
-          <description>Layerx Constant Alpha Configuration
-          Register</description>
-          <addressOffset>0x98</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>CONSTA</name>
-              <description>Constant Alpha</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>L1DCCR</name>
-          <displayName>L1DCCR</displayName>
-          <description>Layerx Default Color Configuration
-          Register</description>
-          <addressOffset>0x9C</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>DCALPHA</name>
-              <description>Default Color Alpha</description>
-              <bitOffset>24</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>DCRED</name>
-              <description>Default Color Red</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>DCGREEN</name>
-              <description>Default Color Green</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>DCBLUE</name>
-              <description>Default Color Blue</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>L1BFCR</name>
-          <displayName>L1BFCR</displayName>
-          <description>Layerx Blending Factors Configuration
-          Register</description>
-          <addressOffset>0xA0</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000607</resetValue>
-          <fields>
-            <field>
-              <name>BF1</name>
-              <description>Blending Factor 1</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>BF2</name>
-              <description>Blending Factor 2</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>L1CFBAR</name>
-          <displayName>L1CFBAR</displayName>
-          <description>Layerx Color Frame Buffer Address
-          Register</description>
-          <addressOffset>0xAC</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>CFBADD</name>
-              <description>Color Frame Buffer Start
-              Address</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>L1CFBLR</name>
-          <displayName>L1CFBLR</displayName>
-          <description>Layerx Color Frame Buffer Length
-          Register</description>
-          <addressOffset>0xB0</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>CFBP</name>
-              <description>Color Frame Buffer Pitch in
-              bytes</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>13</bitWidth>
-            </field>
-            <field>
-              <name>CFBLL</name>
-              <description>Color Frame Buffer Line
-              Length</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>13</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>L1CFBLNR</name>
-          <displayName>L1CFBLNR</displayName>
-          <description>Layerx ColorFrame Buffer Line Number
-          Register</description>
-          <addressOffset>0xB4</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>CFBLNBR</name>
-              <description>Frame Buffer Line Number</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>11</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>L1CLUTWR</name>
-          <displayName>L1CLUTWR</displayName>
-          <description>Layerx CLUT Write Register</description>
-          <addressOffset>0xC4</addressOffset>
-          <size>0x20</size>
-          <access>write-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>CLUTADD</name>
-              <description>CLUT Address</description>
-              <bitOffset>24</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>RED</name>
-              <description>Red value</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>GREEN</name>
-              <description>Green value</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>BLUE</name>
-              <description>Blue value</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>L2CR</name>
-          <displayName>L2CR</displayName>
-          <description>Layerx Control Register</description>
-          <addressOffset>0x104</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>CLUTEN</name>
-              <description>Color Look-Up Table Enable</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>COLKEN</name>
-              <description>Color Keying Enable</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>LEN</name>
-              <description>Layer Enable</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>L2WHPCR</name>
-          <displayName>L2WHPCR</displayName>
-          <description>Layerx Window Horizontal Position
-          Configuration Register</description>
-          <addressOffset>0x108</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>WHSPPOS</name>
-              <description>Window Horizontal Stop
-              Position</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>12</bitWidth>
-            </field>
-            <field>
-              <name>WHSTPOS</name>
-              <description>Window Horizontal Start
-              Position</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>12</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>L2WVPCR</name>
-          <displayName>L2WVPCR</displayName>
-          <description>Layerx Window Vertical Position
-          Configuration Register</description>
-          <addressOffset>0x10C</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>WVSPPOS</name>
-              <description>Window Vertical Stop
-              Position</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>11</bitWidth>
-            </field>
-            <field>
-              <name>WVSTPOS</name>
-              <description>Window Vertical Start
-              Position</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>11</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>L2CKCR</name>
-          <displayName>L2CKCR</displayName>
-          <description>Layerx Color Keying Configuration
-          Register</description>
-          <addressOffset>0x110</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>CKRED</name>
-              <description>Color Key Red value</description>
-              <bitOffset>15</bitOffset>
-              <bitWidth>9</bitWidth>
-            </field>
-            <field>
-              <name>CKGREEN</name>
-              <description>Color Key Green value</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>7</bitWidth>
-            </field>
-            <field>
-              <name>CKBLUE</name>
-              <description>Color Key Blue value</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>L2PFCR</name>
-          <displayName>L2PFCR</displayName>
-          <description>Layerx Pixel Format Configuration
-          Register</description>
-          <addressOffset>0x114</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>PF</name>
-              <description>Pixel Format</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>L2CACR</name>
-          <displayName>L2CACR</displayName>
-          <description>Layerx Constant Alpha Configuration
-          Register</description>
-          <addressOffset>0x118</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>CONSTA</name>
-              <description>Constant Alpha</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>L2DCCR</name>
-          <displayName>L2DCCR</displayName>
-          <description>Layerx Default Color Configuration
-          Register</description>
-          <addressOffset>0x11C</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>DCALPHA</name>
-              <description>Default Color Alpha</description>
-              <bitOffset>24</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>DCRED</name>
-              <description>Default Color Red</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>DCGREEN</name>
-              <description>Default Color Green</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>DCBLUE</name>
-              <description>Default Color Blue</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>L2BFCR</name>
-          <displayName>L2BFCR</displayName>
-          <description>Layerx Blending Factors Configuration
-          Register</description>
-          <addressOffset>0x120</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000607</resetValue>
-          <fields>
-            <field>
-              <name>BF1</name>
-              <description>Blending Factor 1</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-            <field>
-              <name>BF2</name>
-              <description>Blending Factor 2</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>3</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>L2CFBAR</name>
-          <displayName>L2CFBAR</displayName>
-          <description>Layerx Color Frame Buffer Address
-          Register</description>
-          <addressOffset>0x12C</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>CFBADD</name>
-              <description>Color Frame Buffer Start
-              Address</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>L2CFBLR</name>
-          <displayName>L2CFBLR</displayName>
-          <description>Layerx Color Frame Buffer Length
-          Register</description>
-          <addressOffset>0x130</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>CFBP</name>
-              <description>Color Frame Buffer Pitch in
-              bytes</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>13</bitWidth>
-            </field>
-            <field>
-              <name>CFBLL</name>
-              <description>Color Frame Buffer Line
-              Length</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>13</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>L2CFBLNR</name>
-          <displayName>L2CFBLNR</displayName>
-          <description>Layerx ColorFrame Buffer Line Number
-          Register</description>
-          <addressOffset>0x134</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>CFBLNBR</name>
-              <description>Frame Buffer Line Number</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>11</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>L2CLUTWR</name>
-          <displayName>L2CLUTWR</displayName>
-          <description>Layerx CLUT Write Register</description>
-          <addressOffset>0x144</addressOffset>
-          <size>0x20</size>
-          <access>write-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>CLUTADD</name>
-              <description>CLUT Address</description>
-              <bitOffset>24</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>RED</name>
-              <description>Red value</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>GREEN</name>
-              <description>Green value</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-            <field>
-              <name>BLUE</name>
-              <description>Blue value</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>8</bitWidth>
-            </field>
-          </fields>
-        </register>
+        <cluster>
+            <dim>2</dim>
+            <dimIncrement>0x80</dimIncrement>
+            <dimIndex>0-2</dimIndex>
+            <name>Layer[%s]</name>
+            <description>LTDC layer</description>
+            <headerStructName>ltdc_layer</headerStructName>
+            <addressOffset>0x84</addressOffset>
+            <register>
+                <name>CR</name>
+                <displayName>CR</displayName>
+                <description>Layerx Control Register</description>
+                <addressOffset>0x00</addressOffset>
+                <size>0x20</size>
+                <access>read-write</access>
+                <resetValue>0x00000000</resetValue>
+                <fields>
+                    <field>
+                        <name>CLUTEN</name>
+                        <description>Color Look-Up Table Enable</description>
+                        <bitOffset>4</bitOffset>
+                        <bitWidth>1</bitWidth>
+                    </field>
+                    <field>
+                        <name>COLKEN</name>
+                        <description>Color Keying Enable</description>
+                        <bitOffset>1</bitOffset>
+                        <bitWidth>1</bitWidth>
+                    </field>
+                    <field>
+                        <name>LEN</name>
+                        <description>Layer Enable</description>
+                        <bitOffset>0</bitOffset>
+                        <bitWidth>1</bitWidth>
+                    </field>
+                </fields>
+            </register>
+            <register>
+                <name>WHPCR</name>
+                <displayName>WHPCR</displayName>
+                <description>Layerx Window Horizontal Position
+                    Configuration Register</description>
+                <addressOffset>0x4</addressOffset>
+                <size>0x20</size>
+                <access>read-write</access>
+                <resetValue>0x00000000</resetValue>
+                <fields>
+                    <field>
+                        <name>WHSPPOS</name>
+                        <description>Window Horizontal Stop
+                            Position</description>
+                        <bitOffset>16</bitOffset>
+                        <bitWidth>12</bitWidth>
+                    </field>
+                    <field>
+                        <name>WHSTPOS</name>
+                        <description>Window Horizontal Start
+                            Position</description>
+                        <bitOffset>0</bitOffset>
+                        <bitWidth>12</bitWidth>
+                    </field>
+                </fields>
+            </register>
+            <register>
+                <name>WVPCR</name>
+                <displayName>WVPCR</displayName>
+                <description>Layerx Window Vertical Position
+                    Configuration Register</description>
+                <addressOffset>0x8</addressOffset>
+                <size>0x20</size>
+                <access>read-write</access>
+                <resetValue>0x00000000</resetValue>
+                <fields>
+                    <field>
+                        <name>WVSPPOS</name>
+                        <description>Window Vertical Stop
+                            Position</description>
+                        <bitOffset>16</bitOffset>
+                        <bitWidth>11</bitWidth>
+                    </field>
+                    <field>
+                        <name>WVSTPOS</name>
+                        <description>Window Vertical Start
+                            Position</description>
+                        <bitOffset>0</bitOffset>
+                        <bitWidth>11</bitWidth>
+                    </field>
+                </fields>
+            </register>
+            <register>
+                <name>CKCR</name>
+                <displayName>CKCR</displayName>
+                <description>Layerx Color Keying Configuration
+                    Register</description>
+                <addressOffset>0xc</addressOffset>
+                <size>0x20</size>
+                <access>read-write</access>
+                <resetValue>0x00000000</resetValue>
+                <fields>
+                    <field>
+                        <name>CKRED</name>
+                        <description>Color Key Red value</description>
+                        <bitOffset>16</bitOffset>
+                        <bitWidth>8</bitWidth>
+                    </field>
+                    <field>
+                        <name>CKGREEN</name>
+                        <description>Color Key Green value</description>
+                        <bitOffset>8</bitOffset>
+                        <bitWidth>8</bitWidth>
+                    </field>
+                    <field>
+                        <name>CKBLUE</name>
+                        <description>Color Key Blue value</description>
+                        <bitOffset>0</bitOffset>
+                        <bitWidth>8</bitWidth>
+                    </field>
+                </fields>
+            </register>
+            <register>
+                <name>PFCR</name>
+                <displayName>PFCR</displayName>
+                <description>Layerx Pixel Format Configuration
+                    Register</description>
+                <addressOffset>0x10</addressOffset>
+                <size>0x20</size>
+                <access>read-write</access>
+                <resetValue>0x00000000</resetValue>
+                <fields>
+                    <field>
+                        <name>PF</name>
+                        <description>Pixel Format</description>
+                        <bitOffset>0</bitOffset>
+                        <bitWidth>3</bitWidth>
+                    </field>
+                </fields>
+            </register>
+            <register>
+                <name>CACR</name>
+                <displayName>CACR</displayName>
+                <description>Layerx Constant Alpha Configuration
+                    Register</description>
+                <addressOffset>0x14</addressOffset>
+                <size>0x20</size>
+                <access>read-write</access>
+                <resetValue>0x00000000</resetValue>
+                <fields>
+                    <field>
+                        <name>CONSTA</name>
+                        <description>Constant Alpha</description>
+                        <bitOffset>0</bitOffset>
+                        <bitWidth>8</bitWidth>
+                    </field>
+                </fields>
+            </register>
+            <register>
+                <name>DCCR</name>
+                <displayName>DCCR</displayName>
+                <description>Layerx Default Color Configuration
+                    Register</description>
+                <addressOffset>0x18</addressOffset>
+                <size>0x20</size>
+                <access>read-write</access>
+                <resetValue>0x00000000</resetValue>
+                <fields>
+                    <field>
+                        <name>DCALPHA</name>
+                        <description>Default Color Alpha</description>
+                        <bitOffset>24</bitOffset>
+                        <bitWidth>8</bitWidth>
+                    </field>
+                    <field>
+                        <name>DCRED</name>
+                        <description>Default Color Red</description>
+                        <bitOffset>16</bitOffset>
+                        <bitWidth>8</bitWidth>
+                    </field>
+                    <field>
+                        <name>DCGREEN</name>
+                        <description>Default Color Green</description>
+                        <bitOffset>8</bitOffset>
+                        <bitWidth>8</bitWidth>
+                    </field>
+                    <field>
+                        <name>DCBLUE</name>
+                        <description>Default Color Blue</description>
+                        <bitOffset>0</bitOffset>
+                        <bitWidth>8</bitWidth>
+                    </field>
+                </fields>
+            </register>
+            <register>
+                <name>BFCR</name>
+                <displayName>BFCR</displayName>
+                <description>Layerx Blending Factors Configuration
+                    Register</description>
+                <addressOffset>0x1c</addressOffset>
+                <size>0x20</size>
+                <access>read-write</access>
+                <resetValue>0x00000607</resetValue>
+                <fields>
+                    <field>
+                        <name>BF1</name>
+                        <description>Blending Factor 1</description>
+                        <bitOffset>8</bitOffset>
+                        <bitWidth>3</bitWidth>
+                    </field>
+                    <field>
+                        <name>BF2</name>
+                        <description>Blending Factor 2</description>
+                        <bitOffset>0</bitOffset>
+                        <bitWidth>3</bitWidth>
+                    </field>
+                </fields>
+            </register>
+            <register>
+                <name>CFBAR</name>
+                <displayName>CFBAR</displayName>
+                <description>Layerx Color Frame Buffer Address
+                    Register</description>
+                <addressOffset>0x28</addressOffset>
+                <size>0x20</size>
+                <access>read-write</access>
+                <resetValue>0x00000000</resetValue>
+                <fields>
+                    <field>
+                        <name>CFBADD</name>
+                        <description>Color Frame Buffer Start
+                            Address</description>
+                        <bitOffset>0</bitOffset>
+                        <bitWidth>32</bitWidth>
+                    </field>
+                </fields>
+            </register>
+            <register>
+                <name>CFBLR</name>
+                <displayName>CFBLR</displayName>
+                <description>Layerx Color Frame Buffer Length
+                    Register</description>
+                <addressOffset>0x2c</addressOffset>
+                <size>0x20</size>
+                <access>read-write</access>
+                <resetValue>0x00000000</resetValue>
+                <fields>
+                    <field>
+                        <name>CFBP</name>
+                        <description>Color Frame Buffer Pitch in
+                            bytes</description>
+                        <bitOffset>16</bitOffset>
+                        <bitWidth>13</bitWidth>
+                    </field>
+                    <field>
+                        <name>CFBLL</name>
+                        <description>Color Frame Buffer Line
+                            Length</description>
+                        <bitOffset>0</bitOffset>
+                        <bitWidth>13</bitWidth>
+                    </field>
+                </fields>
+            </register>
+            <register>
+                <name>CFBLNR</name>
+                <displayName>CFBLNR</displayName>
+                <description>Layerx ColorFrame Buffer Line Number
+                    Register</description>
+                <addressOffset>0x30</addressOffset>
+                <size>0x20</size>
+                <access>read-write</access>
+                <resetValue>0x00000000</resetValue>
+                <fields>
+                    <field>
+                        <name>CFBLNBR</name>
+                        <description>Frame Buffer Line Number</description>
+                        <bitOffset>0</bitOffset>
+                        <bitWidth>11</bitWidth>
+                    </field>
+                </fields>
+            </register>
+            <register>
+                <name>CLUTWR</name>
+                <displayName>CLUTWR</displayName>
+                <description>Layerx CLUT Write Register</description>
+                <addressOffset>0x40</addressOffset>
+                <size>0x20</size>
+                <access>write-only</access>
+                <resetValue>0x00000000</resetValue>
+                <fields>
+                    <field>
+                        <name>CLUTADD</name>
+                        <description>CLUT Address</description>
+                        <bitOffset>24</bitOffset>
+                        <bitWidth>8</bitWidth>
+                    </field>
+                    <field>
+                        <name>RED</name>
+                        <description>Red value</description>
+                        <bitOffset>16</bitOffset>
+                        <bitWidth>8</bitWidth>
+                    </field>
+                    <field>
+                        <name>GREEN</name>
+                        <description>Green value</description>
+                        <bitOffset>8</bitOffset>
+                        <bitWidth>8</bitWidth>
+                    </field>
+                    <field>
+                        <name>BLUE</name>
+                        <description>Blue value</description>
+                        <bitOffset>0</bitOffset>
+                        <bitWidth>8</bitWidth>
+                    </field>
+                </fields>
+            </register>
+        </cluster>
       </registers>
     </peripheral>
     <peripheral>
